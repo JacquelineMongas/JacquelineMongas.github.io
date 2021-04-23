@@ -25,11 +25,11 @@ const months = [
     "December"
 ];
 
-const todaysdate = new Date();
-const dayName = dayNames[todaysdate.getDate()];
-const monthName = monthNames[todaysdate.getMonth()];
-const currentDate = '${dayName}, ${todaysdate.getDate()} ${monthName}, ${todaysdate.getFullYear()}';
+const todaysDate = new Date();
+const dayName = dayNames[todaysDate.getDate()];
+const monthName = monthNames[todaysDate.getMonth()];
+const currentDate = '${dayName}, ${todaysDate.getDate()} ${monthName}, ${todaysDate.getFullYear()}';
 
 document.getElementById('currentDate').textContent = currentDate;
-document.querySelector('#rigthsYear').textContent = '${todaysdate.getFullYear()},';
+document.querySelector('#rigthsYear').textContent = '${todaysDate.getFullYear()},';
 document.getElementById('modifiedTime').textContent = '${document.lastModified}';
