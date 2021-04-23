@@ -27,7 +27,9 @@ const months = [
 
 const todaysdate = new Date();
 const dayName = dayNames[todaysdate.getDate()];
-const monthName = months[todaysdate.getMonth()];
-const currentdate = dayName + "," + todaysdate.getDate() + "," + monthName + "," + or + todaysdate.getFullYear();
+const monthName = monthNames[todaysdate.getMonth()];
+const currentDate = '${dayName}, ${todaysdate.getDate()} ${monthName}, ${todaysdate.getFullYear()}';
 
-document.getElementById('currentdate').textContent= currentdate;
+document.getElementById('currentDate').textContent = currentDate;
+document.querySelector('#rigthsYear').textContent = '${todaysdate.getFullYear()},';
+document.getElementById('modifiedTime').textContent = '${document.lastModified}';

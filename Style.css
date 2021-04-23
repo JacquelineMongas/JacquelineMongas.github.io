@@ -8,13 +8,14 @@ body {
 
 .header {
     display:flex;
-    margin: left 10px;
+    margin: 10px;
     text-align: right;
     font-size: 1.5em;
     background-color: rgba(27, 89, 117, 0.753);
     padding-left: 30px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 25px;
+    padding: 20px;
     height: 150px;
     width: 100%;
 }
@@ -49,7 +50,7 @@ footer{
     border-radius: 5px;
     padding-left: 30px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     width: 100%;
     height: 100px;
     margin-top: 100px;
