@@ -10,7 +10,7 @@ const dayNames = [
     ];
 
 // long months names arrays
-const months = [
+const monthNames = [
     "January",
     "Febrary",
     "March",
