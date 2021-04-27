@@ -35,8 +35,11 @@ img {
   margin: 40px 40px 200px 40px;  
 }
 h2{
-    font-size: 1.5em;
-    margin-left: 20px; 
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.5em;
+  margin-left: 20px; 
 }
 
 li{
