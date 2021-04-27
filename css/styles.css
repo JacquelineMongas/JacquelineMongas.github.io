@@ -28,7 +28,7 @@ img {
     border: 1px;
     position: absolute;
     right: 70px;
-    box-shadow: dimgray;
+    box-shadow: 10px 22px 27px 11px rgba(0,0,0,0.77);
 }
 
 .main{
