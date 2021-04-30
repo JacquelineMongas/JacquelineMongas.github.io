@@ -1,0 +1,8 @@
+h1 h2 main {
+font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
