@@ -3,14 +3,32 @@
 body{
     font-size: 16px;
     background-color: rgb(190, 192, 192);
-    
-
 }
-header, footer{
+
+main {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    
+}
+*{
+    box-sizing: content-box; 
+}
+.grid{
+    padding: 2rem;
+}
+
+header, footer {
     background-color:  rgba(27, 89, 117, 0.753);
     text-align: center;
+    font-size: 1.5em;
+}
 
 
+footer{
+    font-size: 1em;
 }
 
 h1, h2, main, body{
@@ -18,9 +36,26 @@ h1, h2, main, body{
 
 }
 
-main {
-    display: block;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    margin: 0 auto;
+li:first-child{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 2px 0;
+    border-bottom: 1px solid;
+    text-align: center;
+    list-style: none;
+}
+ 
+li{
+    list-style: none;
+
+}
+
+img{
+    display:block;
+    width:100%;
+    border: solid 1px;
+    list-style: none;
+    margin: 0;
+
+
 }
