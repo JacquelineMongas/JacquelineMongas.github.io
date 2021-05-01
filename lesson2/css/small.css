@@ -1,8 +1,26 @@
-h1 h2 main {
-font-family: 'Open Sans', sans-serif;
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+
+body{
+    font-size: 16px;
+    background-color: rgb(190, 192, 192);
+    
+
+}
+header, footer{
+    background-color:  rgba(27, 89, 117, 0.753);
+    text-align: center;
+
+
+}
+
+h1, h2, main, body{
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 main {
+    display: block;
     grid-template-columns: 1fr 1fr 1fr;
-
+    width: 100%;
+    margin: 0 auto;
 }
