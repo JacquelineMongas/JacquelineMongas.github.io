@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 .color {
---sky-blue-crayola: hsla(190, 87%, 68%, 1);
---ming: hsla(185, 100%, 23%, 1);
---oxford-blue: hsla(208, 91%, 9%, 1);
---mustard: hsla(49, 100%, 65%, 1);
---sap-green: hsla(86, 93%, 24%, 1);
+    --light-sky-blue: hsla(203, 80%, 76%, 1);
+    --light-green: hsla(116, 72%, 68%, 1);
+    --dark-green-x-11: hsla(118, 61%, 24%, 1);
+    --gold-metallic: hsla(49, 91%, 44%, 1);
+    --dark-red: hsla(10, 100%, 27%, 1);
+    
 
 }
 html{
@@ -13,5 +14,5 @@ html{
 }
 
 body{
-    background-color: var(--sky-blue-crayola);
+    background-color: var(--light-sky-blue);
 }
