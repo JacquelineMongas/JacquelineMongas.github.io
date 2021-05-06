@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
+.color {
+--sky-blue-crayola: hsla(190, 87%, 68%, 1);
+--ming: hsla(185, 100%, 23%, 1);
+--oxford-blue: hsla(208, 91%, 9%, 1);
+--mustard: hsla(49, 100%, 65%, 1);
+--sap-green: hsla(86, 93%, 24%, 1);
+
+}
 html{
     font-family: 'Merriweather', serif;  
 }
 
 body{
-    background-color: blueviolet;
+    background-color: var(--sky-blue-crayola);
 }
