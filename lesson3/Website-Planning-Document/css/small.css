@@ -12,10 +12,24 @@
 
 header{
     font-family: 'Roboto' ,sans-serif;
+
 }
 
-nav ul{
+nav{
     background-color: var(--dark-green-x-11);
+    text-align: center;
+    box-shadow: 0 2px 15px var(--light-green);
+    
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a{
+    display: block;
 }
 main{
     display: grid;
