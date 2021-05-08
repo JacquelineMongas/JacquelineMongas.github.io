@@ -11,13 +11,17 @@ img{
     
 }
 
-h1 h2{
+h1 h2 h3{
     font-size: 30px;
     font-family: 'Merriweather' sans-serif;
 }
 h1{
     box-shadow: 2px 2px 5px 2px;
     color: darkred;
+}
+
+h2 h3{
+    text-align: left;
 }
 
 header, footer{
@@ -43,10 +47,13 @@ nav {
 }
     
 nav ul{
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;   
+    justify-content: center;
+    flex-direction: column; 
+  
 }
 
 nav ul li a {
