@@ -2,26 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 
+
+
 div.logo-box{
     background-color: darkgreen ;
       
 }
 img{
-    width: auto;
-    
+    width: auto;   
 }
 
-h1 h2 h3{
+.color{
+    width: 100%;
+}
+
+
+h1{
+    box-shadow: 2px 2px 5px 2px;
+    color: rgb(235, 223, 223);
+    font-size: 30px;
+    width: 300px;
+    align-items: center;
+    font-family: 'Merriweather' sans-serif;
+}
+
+h2{
+    text-align: left;
     font-size: 30px;
     font-family: 'Merriweather' sans-serif;
 }
-h1{
-    box-shadow: 2px 2px 5px 2px;
-    color: darkred;
-}
 
-h2 h3{
+h3{
     text-align: left;
+    font-size: 30px;
+    font-family: 'Merriweather' sans-serif;
 }
 
 header, footer{
@@ -35,10 +49,18 @@ header, footer{
 
 header{
     box-shadow: 5px 5px 10px 2px;
+    display: grid;
+    grid-template-columns: 110px auto; 
+    align-items: center;
+}
+
+header, footer,main, nav{
+    max-width: 80em;
+    margin: 0 auto;
 }
 
 nav {
-    display: flex;
+    display: block;
     background-color: lightgreen;
     text-align: center;
     box-shadow: 0 5px 20px rgb(2, 34, 2);
@@ -51,8 +73,8 @@ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    flex-direction: column; 
+    
+     
   
 }
 
@@ -60,9 +82,9 @@ nav ul li a {
     display: block;
     text-align: center;
     color:black;
-    padding: 0.75rem;
+    padding: 10px;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.2rem; 
 
 }
 
@@ -73,15 +95,15 @@ nav a:hover {
 
 .active {
     color: red;
+
 }
 
-
-
 main{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: block;
+    grid-template-columns: auto 1fr;
     font-family: 'Merriweather', serif;  
     margin: auto;
+    padding: 15px;
     
 }
 
@@ -95,6 +117,21 @@ section{
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 2em;
-    width: 80%;
-    margin-top: 20px;
+    width: 100%;
+    margin: 20px;
 }
+
+
+.colors tr td {
+	text-align: center;
+	vertical-align: bottom;
+	width: 80%;
+	padding: 15px;
+    margin: auto;
+}
+
+.colors img{
+    width: 80%;
+}
+
+
