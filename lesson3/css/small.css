@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 .color {
-    --light-sky-blue: hsla(203, 80%, 76%, 1);
-    --light-green: hsla(116, 72%, 68%, 1);
-    --dark-green-x-11: hsla(118, 61%, 24%, 1);
-    --gold-metallic: hsla(49, 91%, 44%, 1);
-    --dark-red: hsla(10, 100%, 27%, 1);
+    light-sky-blue: hsla(203, 80%, 76%, 1);
+    light-green: hsla(116, 72%, 68%, 1);
+    dark-green-x-11: hsla(118, 61%, 24%, 1);
+    gold-metallic: hsla(49, 91%, 44%, 1);
+    dark-red: hsla(10, 100%, 27%, 1);
     
 }
 
 div.logo-box{
-    background-color: var(--light-green) ;
+    background-color:hsla(118, 61%, 24%, 1) ;
     font-size: 16px;
 }
 
@@ -25,13 +25,13 @@ header footer{
     font-family: 'Roboto' ,sans-serif;
     align-items: center;
     justify-content: center;
-    background-color: var(--light-sky-blue);
+    background-color: lightskyblue;
 }
 
 nav{
-    background-color: var(--dark-green-x-11);
+    background-color: darkgreen;
     text-align: center;
-    box-shadow: 0 2px 15px var(--light-green);
+    box-shadow: 0 2px 15px lightgreen;
 }
 nav ul{
     list-style: none;
@@ -43,19 +43,19 @@ nav ul{
 nav ul li a{
     display: block;
     text-align: center;
-    color: var(--gold-metallic);
+    color: gold;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
 }
 
 nav a:hover{
-    background-color: var(--dark-red);
+    background-color: darkred;
 
 }
 
 .active{
-    color: var(--light-green);
+    color: lightgreen;
 }
 
 
@@ -66,6 +66,6 @@ main{
 }
 
 body{
-    background-color: var(--light-sky-blue);
+    background-color: lightskyblue;
     
 }
