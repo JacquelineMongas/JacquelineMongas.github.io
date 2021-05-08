@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
-.color {
-    light-sky-blue: hsla(203, 80%, 76%, 1);
-    light-green: hsla(116, 72%, 68%, 1);
-    dark-green-x-11: hsla(118, 61%, 24%, 1);
-    gold-metallic: hsla(49, 91%, 44%, 1);
-    dark-red: hsla(10, 100%, 27%, 1);
-    
-}
 
 div.logo-box{
     background-color: darkgreen ;
@@ -41,46 +33,61 @@ header{
     box-shadow: 5px 5px 10px 2px;
 }
 
-nav{
+nav {
+    display: flex;
     background-color: lightgreen;
     text-align: center;
     box-shadow: 0 5px 20px rgb(2, 34, 2);
+    margin-bottom: 2em;
+    font-family: sans-serif;
 }
+    
 nav ul{
     list-style-type: none;
-    margin: 1px;
-    padding: 1px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;   
 }
 
-
-nav ul li a{
+nav ul li a {
     display: block;
     text-align: center;
     color:black;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
+
 }
 
-nav a:hover{
+nav a:hover {
+    background-color:gold;
     
-    background-color: gold;
-
 }
 
-.active{
-    color: lightgreen;
+.active {
+    color: red;
 }
+
 
 
 main{
     display: grid;
     grid-template-columns: auto 1fr auto;
     font-family: 'Merriweather', serif;  
+    margin: auto;
+    
 }
 
 body{
+    margin: 0 auto;
     background-color: lightskyblue;
     
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 2em;
+    width: 80%;
+    margin-top: 20px;
 }
