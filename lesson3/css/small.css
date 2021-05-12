@@ -23,25 +23,29 @@ h1{
     font-size: 30px;
     width: 300px;
     align-items: center;
-    font-family: 'Merriweather' sans-serif;
+    font-family: 'Merriweather', sans-serif;
 }
 
 h2{
     text-align: left;
-    font-size: 30px;
-    font-family: 'Merriweather' sans-serif;
+    font-size: 20px;
+    font-family: 'Merriweather', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h3{
     text-align: left;
     font-size: 30px;
-    font-family: 'Merriweather' sans-serif;
+    font-family: 'Merriweather', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 header, footer{
     display: flex;
     flex-flow: column;
-    font-family: 'Roboto' ,sans-serif;
+    font-family: 'Roboto', sans-serif;
     align-items: center;
     justify-content: center;
     background-color: darkgreen;
@@ -66,6 +70,7 @@ nav {
     box-shadow: 0 5px 20px rgb(2, 34, 2);
     margin-bottom: 2em;
     font-family: sans-serif;
+
 }
     
 nav ul{
@@ -73,6 +78,7 @@ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
     
      
   
@@ -84,7 +90,8 @@ nav ul li a {
     color:black;
     padding: 10px;
     text-decoration: none;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
+     
 
 }
 
@@ -94,13 +101,15 @@ nav a:hover {
 }
 
 .active {
-    color: red;
+    color: rgb(212, 124, 124);
 
 }
 
+
+
 main{
     display: block;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: repeat(1,1fr);
     font-family: 'Merriweather', serif;  
     margin: auto;
     padding: 15px;
