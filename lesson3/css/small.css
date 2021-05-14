@@ -10,12 +10,22 @@
     
 }
 
-header{
+header footer{
     font-family: 'Roboto' ,sans-serif;
+    background-color: var(--dark-green-x-11);
+    margin: 0 ;
 
 }
 
+h1, h2{
+    font-family: 'Merriweather', sans-serif;
+    padding: 0;
+    font: size 30px; 
+    color: red;
+}
+
 nav{
+    display: block;
     background-color: var(--dark-green-x-11);
     text-align: center;
     box-shadow: 0 2px 15px var(--light-green);
@@ -37,6 +47,7 @@ nav ul li a{
     font-size: 0.95rem;
 }
 main{
+    background-color: var(--light-sky-blue);
     display: grid;
     grid-template-columns: auto 1fr auto;
     font-family: 'Merriweather', serif;  
@@ -44,4 +55,5 @@ main{
 
 body{
     background-color: var(--light-sky-blue);
+    font-size: 16px;
 }
