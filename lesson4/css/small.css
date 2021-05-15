@@ -20,9 +20,10 @@ header {
 	justify-content:center;
 }
 
-picture {
-	width: 80px;
-	
+img {
+	width: 80%;
+	margin: 0;
+
 }
 
 .headings {
@@ -38,7 +39,7 @@ picture {
 .moto {
 	font-style: italic;
 	letter-spacing: 1pt;
-	color: rgb(0, 0, 0) solid;
+	color: black solid;
 	margin-left: 20px;
 	font-size: 25px;
 
@@ -67,6 +68,7 @@ nav {
 	max-width: 90em;
 	list-style: none;
 	padding: 0;
+	margin: 0;
 }
 
 
@@ -76,7 +78,7 @@ nav {
 	text-align: left;
 	text-decoration: none;
 	color: black;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .navigation a:hover{
@@ -89,18 +91,24 @@ nav ul {
 	margin: 0;
 }
 
+.navigation li {
+	display: none;
+}
+
 
 nav ul li a{
 	display: block;
 	padding: 8rem 2%;
 	text-decoration: none;
 	color: #000;
+	margin: 0;
 	
 }
 
 
 nav ul li.active a {
 	background-color: lightskyblue;
+	margin: 0;
 }
 
 nav ul li a:hover{
@@ -168,3 +176,10 @@ footer p{
 	height: auto;
 }
 
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }

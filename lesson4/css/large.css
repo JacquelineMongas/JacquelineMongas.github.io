@@ -1,5 +1,9 @@
 /* Larger viewports */
 @media only screen and (min-width: 64rem) {
+	img{
+		width: 100%;
+		
+	}
 	.navigation li:first-child{
         display:none;
     }
@@ -7,10 +11,7 @@
 	nav ul li a {
 		padding: .6rem 1rem;
 	}
-	header img {
-		width: 100%;
-	}
-
+	
 	.headings h1 {
 		font-size: 3rem;
 	}

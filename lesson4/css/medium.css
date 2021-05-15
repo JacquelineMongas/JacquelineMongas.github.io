@@ -1,11 +1,23 @@
 /* Media Query for medium+ views */
 @media only screen and (min-width: 35em) {
+    .navigation{
+        display:flex;
+    }
+
+    .navigation li{
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a{
+        text-align: center;
+    }
 
     .navigation li:first-child{
         display:none;
     }
     nav ul{
-        margin-left: 2% ;
+        margin:0 ;
     }
 	nav ul li{
         float:left;
