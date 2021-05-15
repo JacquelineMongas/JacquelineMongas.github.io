@@ -1,6 +1,25 @@
-/* 35em is also 560px when basefont is 16px*/
-@media only screen and(min-width:35em){
-    nav button{display: none;}
-    nav ul li{float:left;}
+/* Media Query for medium+ views */
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+        font-size: 18px;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
 
+    nav ul{
+        flex-flow: row wrap;
+    }
+
+    footer p{
+        font-size: 20px;
+    }
 }

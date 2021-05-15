@@ -5,11 +5,11 @@ main{
 }
 
 
-
 body {
 	background-color:lightskyblue;
 	padding: 0;
 	margin: 0;
+	font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -51,12 +51,12 @@ nav button {
 	border: none;
 	font-size: 1.6rem;
 	color:white;
+	display: none;
 
 }
 
 nav {
 	background-color: green;
-	font-family: 'Trebuchet MS', sans-serif;
 	margin: 0 auto;
 	max-width: 100%;
 	font-size: 20px;
@@ -103,7 +103,7 @@ nav ul li a{
 }
 
 
-nav ul li .active a {
+a .active {
 	background-color: lightblue;
 }
 
