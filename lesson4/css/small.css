@@ -45,13 +45,14 @@ picture {
 }
 
 
-nav button {
+.navigation li:not(:first-child) {
+	display: block;
 	margin: .2rem 2%;
 	background-color: transparent;
 	border: none;
 	font-size: 1.6rem;
 	color:white;
-	display: none;
+
 
 }
 
@@ -63,16 +64,10 @@ nav {
 }
 
 .navigation{
-	max-width: 80em;
+	max-width: 90em;
 	list-style: none;
 	padding: 0;
 }
-
-
-.navigation li:first-child{
-	display: block;
-}
-
 
 
 .navigation a{
@@ -88,18 +83,19 @@ nav {
 	color:gold;
 }
 nav ul {
-	display: flex;
+	display: block;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
+
 
 nav ul li a{
 	display: block;
 	padding: 8rem 2%;
 	text-decoration: none;
 	color: #000;
-	border-top: 1px solid rgba(0,0,0,0.3);
+	
 }
 
 
