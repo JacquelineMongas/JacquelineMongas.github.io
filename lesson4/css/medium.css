@@ -1,25 +1,11 @@
 /* Media Query for medium+ views */
-@media only screen and (min-width: 40em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-        font-size: 18px;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-
-    nav ul{
-        flex-flow: row wrap;
+@media only screen and (min-width: 35em) {
+    nav button{
+        display:none;
+    }
+	nav ul li{
+        float:left;
     }
 
-    footer p{
-        font-size: 20px;
-    }
+    nav ul li a{ border: none;}
 }

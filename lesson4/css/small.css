@@ -99,12 +99,12 @@ nav ul li a{
 	padding: 8rem 2%;
 	text-decoration: none;
 	color: #000;
-	border-top: 1px solid(0,0,0,0.3);
+	border-top: 1px solid rgba(0,0,0,0.3);
 }
 
 
-a .active {
-	background-color: lightblue;
+nav ul li.active a {
+	background-color: lightskyblue;
 }
 
 nav ul li a:hover{
