@@ -176,6 +176,18 @@ footer p{
 	height: auto;
 }
 
+/* hero area*/
+
+
+
+
+
+
+
+
+
+
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -183,3 +195,5 @@ footer p{
 	display: table;
 	clear: both;
   }
+
+  
