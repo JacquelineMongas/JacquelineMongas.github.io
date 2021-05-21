@@ -6,7 +6,7 @@ main{
 
 
 body {
-	background-color:lightskyblue;
+	background-color:rgb(216, 234, 245);
 	padding: 0;
 	margin: 0;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
@@ -20,20 +20,22 @@ header {
 	justify-content:center;
 }
 
-img {
-	width: 80%;
-	margin: 0;
+header img {
+	width: 40%;
+	height: auto;
+	margin:auto;
 
 }
 
 .headings {
 	display: flex;
 	flex-direction: column;
+	margin-left: 10px;
 }
 
 .headings h1 {
 	font-size: 2rem;
-	margin: 0 0 0 17px;
+	margin: 0;
 }
 
 .moto {
@@ -41,7 +43,8 @@ img {
 	letter-spacing: 1pt;
 	color: black solid;
 	margin-left: 20px;
-	font-size: 25px;
+	font-size: 20px;
+	
 
 }
 
@@ -120,6 +123,12 @@ nav ul li a:hover{
 	display: block;
 }
 
+/*heroArea*/
+.heroArea img{
+	margin: 10px auto;
+	width: 100%;
+	height: auto;
+}
 
 /*footer*/
 footer{
