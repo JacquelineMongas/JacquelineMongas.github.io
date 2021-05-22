@@ -132,7 +132,6 @@ nav ul li a:hover{
 }
 
 /*heroArea*/
-
 .heroArea{
 	position: relative;
 	margin: 10px auto;
@@ -147,8 +146,6 @@ nav ul li a:hover{
 	height: 380px;
 	
 }
-
-
 
 .weatherSummary{
 	position: absolute;
@@ -225,21 +222,36 @@ h2{
 	padding: .5rem;
 	display: block;
 }
+
+
 /*article area*/
 h4{
 	font-weight: bold;
 	text-align: center;
 }
-.articleArea{
-	overflow: auto;
-	border: 1px solid black;
-	background: rgb(206, 228, 241); 
-	padding: 15px;
-	margin-top: 10px;
-}
 
 .articleArea img{
-	margin: 0px 0px 15px 15px;
+	float:right;
+	width: 50%;
+	max-width: 400px;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px black;
+	
+}
+
+section.articleArea{
+	position: relative;
+	margin: 10px auto;
+	border: 1px solid black;
+	padding: 2rem;
+	width: auto;
+}
+section.articleArea p{
+	margin-left: 0 auto;
+	padding: 1rem;
+	max-width: 960px;
 }
 
 /*contact area*/
