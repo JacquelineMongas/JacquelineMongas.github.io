@@ -228,6 +228,7 @@ h2{
 h4{
 	font-weight: bold;
 	text-align: center;
+	
 }
 
 .articleArea img{
@@ -255,42 +256,38 @@ section.articleArea p{
 }
 
 /*contact area*/
-#contactArea{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding: 15px;
-	text-align: center;
+.contactInfo{
+	display: flex;
+	position: relative;
+	left: -1rem;
+	width: 100%;
+	padding: 1rem;
+	background-color: lightgreen ;
 	
+}
+
+section.contactInfo div.socialIcon{
+	display: grid;
+	grid: gap 5px;
+	grid-template-columns: repeat(3, 50px);
+	justify-items: center;
+	align-items: flex-start;
+	padding-left: 35px;
 }
 
 #mapImg{
-	justify-self: end;
+	justify-self: start;
 	height: auto;
 	width: 100%;
 	max-width: 400px;
-	border:1px solid black;;
+	border: 0.5em black;
 }
 
-#contactTextArea{
-	display:flex;
-	flex-direction: column;
-}
-#contactTextArea p{
-	margin: 0;
-	padding-bottom: 15px;
-}
 
-#contactTextArea h3{
-	grid-column: 1 / 3;
-	margin-top: 0;
+div.socialIcon{
+	width: 40px;
+	height: auto;	
 }
-
-.socialIcon{
-	width: 50px;
-	height: auto;
-	
-}
-
 
 .prestonPancakes{
 	display: none;
