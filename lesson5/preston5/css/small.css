@@ -175,7 +175,53 @@ nav ul li a:hover{
 	padding: 2px;
 }
 
+/*five day forecast*/
+h2{
+	font-weight: bold;
+	text-align: center;
+}
+.forecastArea{
+	display: none;
+}
+.forecastFive{
+	display:flex;
+	width: 100%;
+	border: 1px solid black;
+}
 
+.forecastCol{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+}
+
+.forecastDay{
+	width: 100%;
+	margin: 0;
+	background-color: green;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.forecast img{
+	padding-top: 10px;
+	width: 70%;
+	height: auto;
+}
+/*article area*/
+h3{
+	font-weight: bold;
+	text-align: center;
+}
+.articleArea{
+	overflow: auto;
+	border: 2px solid black;
+	background: rgb(206, 228, 241); 
+	padding: 15px;
+	margin-top: 10px;
+}
 
 /*footer*/
 footer{
@@ -205,12 +251,14 @@ footer p{
 	grid-template-columns: 1fr 1fr;
 	padding: 15px;
 	text-align: center;
+	
 }
 
 #mapImg{
 	justify-self: end;
 	height: auto;
-
+	width: 100%;
+	max-width: 400px;
 }
 
 #contactTextArea{
@@ -228,12 +276,15 @@ footer p{
 }
 
 .socialIcon{
-	width: 20px;
+	width: 50px;
 	height: auto;
+	justify-self: right;
 }
 
-/* hero area*/
 
+.prestonPancakes{
+	display: none;
+}
 
 
 
