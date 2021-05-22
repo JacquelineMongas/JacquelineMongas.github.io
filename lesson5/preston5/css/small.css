@@ -49,8 +49,8 @@ header img {
 .moto {
 	font-style: italic;
 	letter-spacing: 1pt;
-	color: black solid;
-	margin-left: 20px;
+	color: black;
+	margin-left: 0;
 	font-size: 20px;
 	
 
@@ -266,18 +266,8 @@ section.articleArea p{
 
 }
 .contactInfo{
-	display: flex;
-	flex-direction: column;
-	left: -1rem;
-	padding: 1rem;
 	margin: 0 auto;
 	background-color: lightgreen ;
-	
-}
-
-section.contactInfo div.socialIcon{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
 	align-items: flex-start;
 	
