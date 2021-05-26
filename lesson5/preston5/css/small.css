@@ -14,30 +14,33 @@ body {
 
 header {
 	background-color: lightgreen;
-	padding: 5px 0;
-	display: flex;
+	padding: 0;
+	display: grid;
+	grid-template-columns: auto 1fr;
 	align-items:center;
 	justify-content:center;
+	width: 100px;
 }
 	
 
 header img {
-	width: 40%;
-	height: auto;
-	margin:auto;
+	width: 100px;
+	margin-right: 7px;
+	padding-bottom: 16px;
+	margin-top: 1.4em;
+
 
 }
 
-.headings {
-	display: flex;
-	flex-direction: column;
-	margin-left: 10px;
+.header div {
+	display:flex;
+	align-items: center;
 }
 
-.headings h1 {
-	display: flex;
+.h1 {
 	font-size: 2rem;
-	margin: 0;
+	margin-top: 1.2em;
+	margin-bottom: .3em;
 }
 
 .h2{
@@ -198,10 +201,12 @@ h2{
 .five-day section{
 	border: solid .5px black;
 	padding: 0;
+	align-items: center;
 }
 
 .five-day div{
 	margin: 0 auto;
+	
 }
 
 .five-day h3{
@@ -214,9 +219,9 @@ h2{
 
 .five-day img{
 	width: 60px;
-	height: 60px;
 	background-position: -11px -13px;
 	transform: scale(.9);
+	
 	
 }
 
@@ -270,7 +275,7 @@ section.articleArea p{
 	margin: 0 auto;
 	background-color: lightgreen ;
 	justify-items: center;
-	align-items: flex-start;
+	text-align: center;
 	
 }
 
@@ -285,7 +290,8 @@ section.articleArea p{
 
 div.socialIcon{
 	width: 40px;
-	height: auto;	
+	align-items: center;
+	
 }
 
 .prestonPancakes{
