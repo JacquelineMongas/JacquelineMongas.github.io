@@ -4,7 +4,6 @@ main{
 	padding: 10px;
 }
 
-
 body {
 	background-color:rgb(206, 228, 241);
 	padding: 0;
@@ -12,35 +11,32 @@ body {
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
-header {
+/*heading*/
+.header {
 	background-color: lightgreen;
-	padding: 0;
-	display: grid;
-	grid-template-columns: auto 1fr;
+	display: flex;
+	flex-direction: column;
 	align-items:center;
 	justify-content:center;
-	width: 100px;
-}
 	
+}	
 
 header img {
 	width: 100px;
-	margin-right: 7px;
-	padding-bottom: 16px;
-	margin-top: 1.4em;
-
-
-}
-
-.header div {
-	display:flex;
 	align-items: center;
+}
+.headings{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
 }
 
 .h1 {
 	font-size: 2rem;
 	margin-top: 1.2em;
+	margin-left: 0;
 	margin-bottom: .3em;
+	text-align: center;
 }
 
 .h2{
@@ -56,6 +52,7 @@ header img {
 	color: black;
 	margin-left: 0;
 	font-size: 20px;
+	text-align: center;
 	
 
 }

@@ -25,4 +25,7 @@
 	.navigation a{
 		font-size: 20px;
 	}
+	#article img{
+		width: 100%;
+	}
 }
