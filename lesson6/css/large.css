@@ -1,5 +1,5 @@
 /* Larger viewports */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 60rem) {
 	img{
 		width: 100%;
 		
