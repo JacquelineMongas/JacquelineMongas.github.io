@@ -8,7 +8,7 @@ body {
 	background-color:rgb(206, 228, 241);
 	padding: 0;
 	margin: 0;
-	font-family: Roboto, 'Helvetica Neue', sans-serif;
+	font-family: Lora, serif;
 }
 
 /*heading*/
@@ -303,7 +303,7 @@ div.socialIcon{
 /*footer*/
 footer{
 	background-color:lightgreen;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: Lora, serif;
 	margin: 0 auto;
 	max-width: 100%;
 
