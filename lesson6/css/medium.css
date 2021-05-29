@@ -28,6 +28,15 @@
         padding: .6rem 1rem;
         font-size: 20px;
     }
+
+    #mapImg{
+        display: block;
+    }
+
+    #contactArea{
+        grid-column: 2/3;
+    }
+
 }
 
 

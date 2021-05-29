@@ -25,22 +25,32 @@ img{
 	width:100%;
 }
 
-header img {
-	width: 100px;
-	align-items: center;
+header figure.logo {
+  float: left;
 }
-.headings{
+section.headings{
 	display: flex;
 	flex-direction: column;
 	margin-left: 10px;
+	align-items: center;
 }
+
+.moto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: black;
+	font-size: 20px;
+	text-align: center;	
+}
+
 
 .h1 {
 	font-size: 2rem;
 	margin-top: 1.2em;
-	margin-left: 0;
 	margin-bottom: .3em;
 	text-align: center;
+	
+
 }
 
 .h2{
@@ -50,16 +60,6 @@ header img {
 }
 
 
-.moto {
-	font-style: italic;
-	letter-spacing: 1pt;
-	color: black;
-	margin-left: 0;
-	font-size: 20px;
-	text-align: center;
-	
-
-}
 
 
 .navigation li:not(:first-child) {
