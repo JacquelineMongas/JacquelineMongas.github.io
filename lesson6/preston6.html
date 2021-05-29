@@ -54,11 +54,10 @@
               <label>Wind Chill:</label><p><span id="windChill"></span></p>
               <label>Humidity:</label> <p>69%</p>
               <label>Wind Speed:</label> <p><span id="windSpeed">12</span> mph</p>
-          </section>
               </section>
             </div>
 
-            <section class="forecastArea">
+            <div id="forecastArea">
               <h2>Five day Forecast</h2>
               <div class="five-day">
                 <section>
@@ -90,16 +89,17 @@
                   <div class="weather-icon"></div>
                   <img src="images/sunny.png" alt="sunny">
                   <span>72&deg;F</span>
-                </div>
-
               </section>
+              </div>
+            </div>
   
-              <section class="articleArea">
-                <div class="img-holder">
-                <img src="images/peopleInparc1.jpg" alt="place holder image in article">
-                </div>
-                <h4>Article</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div id="articleArea">
+                <h4>Article Tittle</h4>
+                <figure class="articleImg">
+                  <img src="images/peopleInparc1.jpg" alt="place holder image in article">
+                </figure>
+                
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                    Natus ipsam laborum voluptatem tempora quaerat nisi non dolorem. 
                    Unde deserunt blanditiis necessitatibus aperiam rerum rem error distinctio,
                    consectetur voluptatem modi officiis!. Lorem, ipsum dolor sit amet consectetur
@@ -113,28 +113,30 @@
                    adipisicing elit. Expedita, autem quibusdam optio eaque provident harum est? Pariatur modi, 
                    blanditiis aperiam veniam in odit ad reiciendis repellat quia consequuntur voluptas distinctio!
                   </p>
-              </section>
+              </div>
+          </main>
+            <footer>
 
               <div class="contactArea"> 
-                  <section class="contactInfo">
-                    <img id="mapImg" src="images/preston-map.png" alt="image of Preston map">
+                <img id="mapImg" src="images/preston-map.png" alt="image of Preston map">
+                  
+                <section id="contactInfo">
                     <h3>Contact Information</h3>
                     <p>📩:45 S 1st W<br>
                       Preston, ID 83263</p><br>
                     <p>☎: 999.999.9999<br>
                       💻: contact@999.com</p>
                   
-                  <div class="socialIcon">
-                    <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook icon">&ensp;</a>
-                    <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram icon">&ensp;</a>
-                    <a href="https://twitter.com"><img  src="images/twitter.png" alt="tweeter icon"></a>
-                  </div>
-                  </section>
-                </div>
+                    <div>
+                        <a href="https://www.facebook.com" target="_blank"><img class="socialIcon" src="images/facebook.png" alt="facebook icon">&ensp;</a>
+                        <a href="https://www.instagram.com" target="_blank"><img class="socialIcon" src="images/instagram.png" alt="instagram icon">&ensp;</a>
+                        <a href="https://twitter.com" target="_blank"><img  class="socialIcon" src="images/twitter.png" alt="twitter icon"></a>
+                    </div>
+                </section>
               </div>
-          </main>
+          
 
-          <footer>
+          
             <div id="footerBar">
               ©<span id="Year"></span> 2021 | Jacqueline Mongas | France |
               <a href="https://www.byui.edu/online" class="byui">BYUI Online Learning</a>
