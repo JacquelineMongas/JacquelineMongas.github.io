@@ -37,6 +37,17 @@
         grid-column: 2/3;
     }
 
+    .weatherSummary{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    figure.articleImg{
+        float: right;
+        width: 50%;
+    }
+
 }
 
 

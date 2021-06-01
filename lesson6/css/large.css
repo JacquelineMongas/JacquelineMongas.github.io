@@ -25,6 +25,12 @@
 	.navigation a{
 		font-size: 20px;
 	}
+
+	.heroArea{
+		display: flex;
+		position: relative;
+	}
+
 	#article img{
 		width: 100%;
 	}
