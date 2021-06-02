@@ -4,6 +4,9 @@ main{
 	padding: 0;
 }
 
+header, nav, footer, .prestonPancakes{
+	margin: 0 auto;
+}
 body {
 	background-color:rgb(206, 228, 241);
 	padding: 0;
@@ -242,7 +245,7 @@ h4{
 	
 }
 
-figure.articleImg{
+.articleImg{
 	display:block;
 	width: 100%;
 	box-shadow: 0 0 10px black;

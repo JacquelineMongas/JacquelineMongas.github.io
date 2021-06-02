@@ -33,7 +33,7 @@
         display: block;
     }
 
-    #contactArea{
+    .contactArea{
         grid-column: 2/3;
     }
 
@@ -43,9 +43,10 @@
         left: 30px;
     }
 
-    figure.articleImg{
+    .articleImg{
         float: right;
         width: 50%;
+        margin: 0 0 15px 15px;
     }
 
 }
