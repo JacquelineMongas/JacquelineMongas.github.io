@@ -4,15 +4,15 @@ function preloadImage(img) {
     if(!src){
         return;{
             
-        }
-        img.src = src;
+        }       
 }
+img.src = src;
 
 }
     
-
 const imgOptions = {
-    
+    threshold: 0,
+    rootMargin: "0px 0px 300px 0px"
 };
 const imgObserver = new IntersectionObserver((entreies,
     imgObserver) => {
