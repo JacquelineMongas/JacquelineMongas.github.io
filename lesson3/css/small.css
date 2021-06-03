@@ -55,10 +55,12 @@ header, footer{
     flex-direction: column;
 }
 
-<<<<<<< HEAD
+header{
+    background-color: lightgreen;
+}
+
 header footer{
     font-family: 'Roboto' ,sans-serif;
-    background-color: var(--dark-green-x-11);
     margin: 0 ;
 
 }
@@ -67,14 +69,14 @@ h1, h2{
     font-family: 'Merriweather', sans-serif;
     padding: 0;
     font: size 30px; 
-    color: red;
+    color: black;
 }
 
 nav{
     display: block;
-    background-color: var(--dark-green-x-11);
+    background-color: green;
     text-align: center;
-    box-shadow: 0 2px 15px var(--light-green);
+    box-shadow: 0 2px 15px lightgreen;
     
 }
 nav ul{
@@ -82,6 +84,7 @@ nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
+
 }
 
 nav ul li a{
@@ -90,56 +93,7 @@ nav ul li a{
     color: #000;
     padding: 0.75em;
     text-decoration: none;
-    font-size: 0.95rem;
-=======
-header{
-    box-shadow: 5px 5px 10px 2px;
-    display: grid;
-    grid-template-columns: 110px auto; 
-    align-items: center;
-}
-
-header, footer,main, nav{
-    max-width: 80em;
-    margin: 0 auto;
-}
-
-nav {
-    display: block;
-    background-color: lightgreen;
-    text-align: center;
-    box-shadow: 0 5px 20px rgb(2, 34, 2);
-    margin-bottom: 2em;
-    font-family: sans-serif;
-
-}
-    
-nav ul{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    justify-content: center;
-    flex-direction: column; 
-}
-
-nav ul li{
-    padding: 15px;
-    flex: 1 1 auto; /*nav buttons span full width*/
-}
-
-nav ul li a {
-    display: block;
-    text-align: center;
-    color:black;
-    padding: 15px;
-    font-size: 16px;
-    text-decoration: none;
-    font-size: 1.2rem;
-     
-
->>>>>>> 4f048a754c47d8cda1e3cff62aa4df9ab9897503
+    font-size: 1rem;
 }
 
 nav a:hover {
@@ -156,14 +110,9 @@ nav a:hover {
 
 
 main{
-<<<<<<< HEAD
-    background-color: var(--light-sky-blue);
+    background-color: lightblue;
     display: grid;
     grid-template-columns: auto 1fr auto;
-=======
-    display: block;
-    grid-template-columns: repeat(1,1fr);
->>>>>>> 4f048a754c47d8cda1e3cff62aa4df9ab9897503
     font-family: 'Merriweather', serif;  
     margin: auto;
     padding: 15px;
@@ -171,36 +120,6 @@ main{
 }
 
 body{
-<<<<<<< HEAD
-    background-color: var(--light-sky-blue);
+    background-color: lightblue;
     font-size: 16px;
 }
-=======
-    margin: 0 auto;
-    background-color: lightskyblue;
-    
-}
-
-section{
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    gap: 2em;
-    width: 100%;
-    margin: 20px;
-}
-
-
-.colors tr td {
-	text-align: center;
-	vertical-align: bottom;
-	width: 80%;
-	padding: 15px;
-    margin: auto;
-}
-
-.colors img{
-    width: 80%;
-}
-
-
->>>>>>> 4f048a754c47d8cda1e3cff62aa4df9ab9897503
