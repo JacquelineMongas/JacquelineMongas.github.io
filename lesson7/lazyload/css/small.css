@@ -27,4 +27,33 @@ header, footer{
 
 picture{
     width: 300px;
+    filter: blur();
+    transition: filter 2s;
+    box-shadow: 7px 13px 26px -8px rgba(0,0,0,0.75);
 }
+
+/*footer*/
+
+#footerBar{
+	background-color: green;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 20px;
+
+}
+footer p{
+	font-size: 20px;
+}
+
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }

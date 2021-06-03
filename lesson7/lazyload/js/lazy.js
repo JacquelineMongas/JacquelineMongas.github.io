@@ -1,32 +1,35 @@
-const images = documant.querySelectorAll("[data-src]");
-function preloadImage(img) {
-    const src = img.getAttribute("data-src");
-    if(!src){
-        return;{
-            
-        }       
-}
-img.src = src;
+//get all images on the page with data-src
+const imagesToLoad = documant.querySelectorAll("img[data-src]");
 
-}
-    
-const imgOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px 300px 0px"
+const loadImages = (image) => {
+    image.setAttirbute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+
+    };
 };
-const imgObserver = new IntersectionObserver((entreies,
-    imgObserver) => {
-        entreies.forEach(entry =>{
-            if (!entry.isIntersecting){
-                return;
-            } else{
-                preloadImage(entry.target);
-                imgObserver.unobserve(entry.target);
+
+const imgOption = {
+    rootMargin: '0px 0px 50px 0px',
+    threshold: 1
+};
+
+if('IntersectionObserver' in window){
+    //is supported then load
+    const imgObserver = new IntersectionObserver(items =>{
+        items.forEach(item => {
+            if(item.isIntersecting){
+                loadImages(item.target);
             }
-        })
+        });
+    }, imgOptions);
 
-}, imgOptions);
+    imagesToLoad.forEach(img =>{
+        imgObserver.observe(img);
+    });
 
-images.forEach(images =>{
-    imgObserver.observe(image);
-});
+} else{ //load all images if not supported
+    imagesToLoad.forEach(img =>{
+        loadImages(img);
+    });
+}
