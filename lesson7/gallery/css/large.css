@@ -35,6 +35,10 @@
 		width: 100%;
 		margin: 0px;
 	}
+/* weather page*/
+	#weatherGallery{
+		grid-template-columns: repeat(3, 1fr);
+	}
 
 	
 }

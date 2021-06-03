@@ -330,6 +330,12 @@ footer p{
 	font-size: 20px;
 }
 
+/*Gallery page*/
+.weatherGallery{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+}
 
 
 

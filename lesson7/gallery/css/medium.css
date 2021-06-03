@@ -48,6 +48,9 @@
         width: 50%;
         margin: 0 0 15px 15px;
     }
-
+/*weather Gallery page*/
+.weatherGallery{
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
