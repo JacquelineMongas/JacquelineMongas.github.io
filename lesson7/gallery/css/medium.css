@@ -1,0 +1,53 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 40em) {
+    .navigation{
+        display:flex;
+    }
+
+    .navigation li{
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a{
+        text-align: center;
+    }
+
+    .navigation li:first-child{
+        display:none;
+    }
+    nav ul{
+        margin:0 ;
+    }
+	nav ul li{
+        float:left;
+    }
+
+    nav ul li a{ 
+        border: none;
+        padding: .6rem 1rem;
+        font-size: 20px;
+    }
+
+    #mapImg{
+        display: block;
+    }
+
+    .contactArea{
+        grid-column: 2/3;
+    }
+
+    .weatherSummary{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .articleImg{
+        float: right;
+        width: 50%;
+        margin: 0 0 15px 15px;
+    }
+
+}
+

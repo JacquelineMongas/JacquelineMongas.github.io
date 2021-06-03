@@ -1,0 +1,40 @@
+/* Larger viewports */
+@media only screen and (min-width: 60rem) {
+	img{
+		width: 100%;
+		
+	}
+	.navigation li:first-child{
+        display:none;
+    }
+
+	nav ul li a {
+		padding: .6rem 1rem;
+	}
+	
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.moto {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+
+	.navigation a{
+		font-size: 20px;
+	}
+
+	.heroArea{
+		display: flex;
+		position: relative;
+	}
+
+	#article img{
+		width: 100%;
+		margin: 0px;
+	}
+
+	
+}
