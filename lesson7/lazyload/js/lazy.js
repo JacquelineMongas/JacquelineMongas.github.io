@@ -1,5 +1,5 @@
 //get all images on the page with data-src
-const imagesToLoad = documant.querySelectorAll("img[data-src]");
+const imagesToLoad = documant.querySelectorAll('img[data-src]');
 
 const loadImages = (image) => {
     image.setAttirbute('src', image.getAttribute('data-src'));

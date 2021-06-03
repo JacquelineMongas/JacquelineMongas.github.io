@@ -1,4 +1,5 @@
 body{
+    background-color:rgb(206, 228, 241);
     font-family: limelight;
 }
 
@@ -29,7 +30,7 @@ picture{
     width: 300px;
     filter: blur();
     transition: filter 2s;
-    box-shadow: 7px 13px 26px -8px rgba(0,0,0,0.75);
+    box-shadow: 7px 13px 26px -8px rgba(5, 5, 5, 0.75);
 }
 
 /*footer*/
