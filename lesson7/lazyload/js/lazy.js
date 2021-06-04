@@ -5,19 +5,18 @@ const loadImages = (image) => {
     image.setAttirbute('src', image.getAttribute('data-src'));
     image.onload = () => {
         image.removeAttribute('data-src');
-
     };
 };
 
 const imgOptions = {
-    rootMargin: '0px 0px 50px 0px',
+    rootMargin: '0px 0px 300px 0px',
     threshold: 1
 };
 
 if('IntersectionObserver' in window){
     //is supported then load
-    const imgObserver = new IntersectionObserver(items =>{
-        items.forEach(item => {
+    const imgObserver = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
             if (item.isIntersecting){
                 loadImages(item.target);
                 imgObserver.unobserve(item.target);
@@ -25,12 +24,12 @@ if('IntersectionObserver' in window){
         });
     }, imgOptions);
 
-    imagesToLoad.forEach(img =>{
+    imagesToLoad.forEach((img) =>{
         imgObserver.observe(img);
     });
 
 } else{ //load all images if not supported
-    imagesToLoad.forEach(img =>{
+    imagesToLoad.forEach((img) =>{
         loadImages(img);
     });
 }
