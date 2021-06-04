@@ -32,7 +32,10 @@ picture{
     transition: filter 2s;
     box-shadow: 7px 13px 26px -8px rgba(5, 5, 5, 0.75);
 }
-
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
 /*footer*/
 
 #footerBar{

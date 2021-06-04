@@ -331,7 +331,11 @@ footer p{
 }
 
 /*Gallery page*/
-.weatherGallery{
+.weathergallery.h2{
+	display: block;
+	font-size: 2em;
+}
+.galleryBlock{
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 30px;

@@ -19,21 +19,20 @@ header {
 	background-color: lightgreen;
 	display: flex;
 	flex-direction: column;
-	align-items:center;
-	justify-content:left;	
-	padding: 0;
-	margin-bottom: 0;
-}	
+	align-items:center;	
+}
+
 figure.logo{
 	width:100px;
 	padding: 0 20px;
 	
+	
 }
 
-img{
+/*img{
 	width:100%;
-	padding: 0 20px;
-}
+	
+}*/
 
 
 section.headings{
@@ -48,19 +47,13 @@ section.headings{
 	letter-spacing: 1pt;
 	color: black;
 	font-size: 20px;	
-	padding-top: 0.5rem;
-	padding-bottom: 5rem;
-	margin: 0;
 }
 
 
 .h1 {
 	font-size: 2rem;
 	margin-top: 1.2em;
-	text-align: center;
-	
-	
-
+	text-align: center;	
 }
 
 .h2{
@@ -156,7 +149,7 @@ nav ul li a:hover{
 .heroArea img{
 	margin: 10px auto;
 	max-width: 100%;
-	
+	padding: 0 20px;
 	
 }
 
@@ -250,6 +243,7 @@ h4{
 	width: 100%;
 	box-shadow: 0 0 10px black;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .articleArea{
