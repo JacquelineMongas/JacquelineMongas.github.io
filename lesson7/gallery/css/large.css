@@ -36,8 +36,17 @@
 		margin: 0px;
 	}
 /* weather page*/
+	.weathergallery.h2{
+		display: block;
+		font-size: 2em;
+}
 	.galleryBlock{
-		grid-template-columns: repeat(3,1fr);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		height: auto;
+		
+		
 	}
 
 	

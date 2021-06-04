@@ -1,5 +1,5 @@
 /* Media Query for medium+ views */
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 30em) {
     .navigation{
         display:flex;
     }
@@ -50,9 +50,17 @@
     }
 
     /*weather Gallery page*/
+    .weathergallery.h2{
+        display: block;
+        font-size: 2em;
+    }
+
 .galleryBlock {
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    
+    
+    
 }
 
 }
