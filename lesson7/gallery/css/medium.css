@@ -50,12 +50,12 @@
     }
 
     /*weather Gallery page*/
-    .weathergallery.h2{
+    .gallery.h2{
         display: block;
         font-size: 2em;
     }
 
-    .galleryBlock {
+    .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     

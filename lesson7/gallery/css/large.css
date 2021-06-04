@@ -35,19 +35,39 @@
 		width: 100%;
 		margin: 0px;
 	}
+
 /* weather page*/
-	.weathergallery.h2{
+	.gallery{
+		display: grid;
+		height: auto;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+
+}
+
+	.gallery h2{
 		display: block;
 		font-size: 2em;
-}
-	.galleryBlock{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: auto;
-		gap: 1rem;
-		height: auto;
-		
+
 	}
+	
+	.gallery figure img{
+			width: 100%;
+
+	}
+
+	.gallery figure{
+		padding: 1rem;
+		justify-self: center;
+		border: 1px  #666;
+
+	}
+
+	figure:hover {box-shadow: 9px 11px 16px -2px  #333;}
+
+
+	
+		
 
 	
 }

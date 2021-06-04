@@ -331,19 +331,18 @@ footer p{
 }
 
 /*Gallery page*/
-.h2{
-	display: block;
-	font-size: 2em;
-}
-.galleryBlock{
+
+.gallery{
 	display: grid;
+	height: auto;
 	grid-template-columns: 1fr;
-	gap: 1rem;
-	
-	
-	
 	
 
+}
+
+.gallery h2{
+	display: block;
+	font-size: 2em;
 }
 
 
