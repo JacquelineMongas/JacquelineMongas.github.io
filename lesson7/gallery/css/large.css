@@ -53,17 +53,16 @@
 	
 	.gallery figure img{
 			width: 100%;
+			padding: 0;
 
 	}
-
+ 
 	.gallery figure{
-		padding: 1rem;
 		justify-self: center;
-		border: 1px  #666;
-
+			
 	}
 
-	figure:hover {box-shadow: 9px 11px 16px -2px  #333;}
+	figure:hover {box-shadow: 8px 10px 46px 12px rgba(0,0,0,0.75);}
 
 
 	
