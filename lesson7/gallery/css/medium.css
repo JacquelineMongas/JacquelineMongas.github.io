@@ -55,9 +55,9 @@
         font-size: 2em;
     }
 
-.galleryBlock {
+    .galleryBlock {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 1fr 1fr;
     
     
     
