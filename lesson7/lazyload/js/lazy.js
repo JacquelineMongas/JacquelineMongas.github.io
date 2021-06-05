@@ -2,7 +2,7 @@
 const imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const loadImages = (image) => {
-    image.setAttirbute('src', image.getAttribute('data-src'));
+    image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {
         image.removeAttribute('data-src');
     };
