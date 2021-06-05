@@ -27,7 +27,7 @@ header, footer{
 
 }
 
-img{
+picture{
     width: 300px;
     filter: blur(0em);
     transition: filter 0.08s;
@@ -35,8 +35,9 @@ img{
     transition: opacity 1s;
     box-shadow: 7px 13px 26px -8px rgba(5, 5, 5, 0.75);
 }
-img[data-src] {
+picture img[data-src] {
     filter: blur(0.2em);
+
   }
   
 /*footer*/
