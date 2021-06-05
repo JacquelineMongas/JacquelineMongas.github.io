@@ -56,15 +56,13 @@
 			width: 100%;
 			padding: 0;
 			
-			
-			
-
 
 	}
  
 	.gallery figure{
 		justify-self: center;
 		transition-duration: 3s, 3s;
+		
 				
 	}
 

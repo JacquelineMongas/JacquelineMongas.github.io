@@ -345,6 +345,14 @@ footer p{
 	font-size: 2em;
 }
 
+.gallery figure{
+	justify-self: center;
+}
+
+.gallery figcaption{
+	text-align: center;
+}
+
 
 
 
