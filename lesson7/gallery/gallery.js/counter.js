@@ -12,7 +12,8 @@ window.onload = function() {
 
       if (localStorage.visitcount && !isNaN(localStorage.visitcount)) {
 
-          var durationSinceLastVisit = new Date(localStorage.lastVisitDate) - start;
+        var durationSinceLastVisit = start - new Date(localStorage.lastVisitDate);
+
 
           var msPerDays= 24*60*60*1000;
 
@@ -22,7 +23,8 @@ window.onload = function() {
 
           var timeSpentInMinutes = Math.floor(localStorage.duration/msPerMinutes);
 
-          welcomeText = "Welcome back\nThis is your " + localStorage.visitcount + " visits\nLast visit was " + daysSinceLastVisit + " day(s) ago\n()"+timeSpentInMinutes + " minute(s) of visit on this page until now)";
+          welcomeText = "Welcome back! ( " + localStorage.visitcount + " visits, last visit was " + daysSinceLastVisit + " day(s) ago, "+timeSpentInMinutes + " minute(s) spent on this page)";
+
 
       } else {
 
