@@ -23,7 +23,10 @@ window.onload = function() {
 
           var timeSpentInMinutes = Math.floor(localStorage.duration/msPerMinutes);
 
-          welcomeText = "Welcome back! ( " + localStorage.visitcount + " visits, last visit was " + daysSinceLastVisit + " day(s) ago, "+timeSpentInMinutes + " minute(s) spent on this page)";
+          welcomeText = "Welcome back! Last visit was " + daysSinceLastVisit + " day(s) ago, "+timeSpentInMinutes + " minute(s) spent on this page during your " + localStorage.visitcount + " visits.";
+
+
+
 
 
       } else {
