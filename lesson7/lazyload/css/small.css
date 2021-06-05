@@ -28,12 +28,15 @@ header, footer{
 
 picture{
     width: 300px;
-    filter: blur();
-    transition: filter 2s;
+    filter: blur(0em);
+    transition: filter 0.05s;
+    opacity: 1;
+    transition: opacity .05s;
     box-shadow: 7px 13px 26px -8px rgba(5, 5, 5, 0.75);
 }
 img[data-src] {
     filter: blur(0.2em);
+    opacity: .5;
   }
   
 /*footer*/
