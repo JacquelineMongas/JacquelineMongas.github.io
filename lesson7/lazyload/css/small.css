@@ -27,17 +27,16 @@ header, footer{
 
 }
 
-picture{
+img{
     width: 300px;
     filter: blur(0em);
-    transition: filter 0.05s;
-    opacity: 0;
-    transition: opacity .05s;
+    transition: filter 0.08s;
+    opacity: 1;
+    transition: opacity 1s;
     box-shadow: 7px 13px 26px -8px rgba(5, 5, 5, 0.75);
 }
 img[data-src] {
     filter: blur(0.2em);
-    opacity: .5;
   }
   
 /*footer*/
