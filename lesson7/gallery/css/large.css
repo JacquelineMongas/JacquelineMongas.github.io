@@ -48,21 +48,35 @@
 	.gallery h2{
 		display: block;
 		font-size: 2em;
+		grid-column: 1/ -1;
 
 	}
 	
 	.gallery figure img{
 			width: 100%;
 			padding: 0;
+			
+			
+			
+
 
 	}
  
 	.gallery figure{
 		justify-self: center;
-			
+		transition-duration: 3s, 3s;
+				
 	}
 
-	figure:hover {box-shadow: 8px 10px 46px 12px rgba(0,0,0,0.75);}
+	figure:hover {
+		box-shadow: 8px 10px 46px 12px rgba(0,0,0,0.75);
+		transform: rotate(360deg);
+		transition-timing-function: ease-in-out;
+	}
+
+	.gallery figcaption{
+		text-align: center;
+	}
 
 
 	
