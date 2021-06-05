@@ -58,15 +58,14 @@
 			
 	}
 
-	.gallery figure img[data-src] {
+	 figure img[data-src] {
 		filter: blur(0.2em);
 	  }
  
 	.gallery figure{
 		justify-self: center;
 		transition-duration: 3s, 3s;
-		
-				
+		filter: blur(0em);				
 	}
 
 	figure:hover {

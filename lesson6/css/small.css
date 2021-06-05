@@ -19,27 +19,21 @@ header {
 	background-color: lightgreen;
 	display: flex;
 	flex-direction: column;
-	align-items:center;	
+	align-items:flex-start;	
 }
 
 figure.logo{
 	width:100px;
 	padding: 0 20px;
 	
-	
 }
-
-/*img{
-	width:100%;
-	
-}*/
 
 
 section.headings{
 	display: flex;
 	flex-direction: column;
 	margin: 10px;
-	align-items:flex-start;
+	
 }
 
 .moto {
@@ -154,6 +148,7 @@ nav ul li a:hover{
 }
 
 /*weather Summary box*/
+
 .weatherSummary{
 	background-color: rgb(206, 228, 241);
 	border: .5px solid;
@@ -177,6 +172,7 @@ nav ul li a:hover{
 }
 
 /*five day forecast*/
+
 h2{
 	font-weight: bold;
 	text-align: center;
@@ -238,11 +234,11 @@ h4{
 	
 }
 
-.articleImg{
+figure Img{
 	display:block;
-	width: 100%;
+	max-width: 100%;
 	box-shadow: 0 0 10px black;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
@@ -257,6 +253,9 @@ h4{
 	display: block;
 	padding: 1rem;
 	max-width: 960px;
+	font-size: 15px;
+	margin-top: 10px;
+	
 	
 }
 
@@ -272,6 +271,8 @@ h4{
 
 }
 .contactInfo{
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
 	justify-items: center;
 	text-align: center;
