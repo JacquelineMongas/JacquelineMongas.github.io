@@ -23,6 +23,7 @@ header, footer{
     align-items: center;
     background-color: green;
     justify-content: center;
+    font-family: Arial, sans-serif;
 
 }
 
@@ -30,7 +31,7 @@ picture{
     width: 300px;
     filter: blur(0em);
     transition: filter 0.05s;
-    opacity: 1;
+    opacity: 0;
     transition: opacity .05s;
     box-shadow: 7px 13px 26px -8px rgba(5, 5, 5, 0.75);
 }
