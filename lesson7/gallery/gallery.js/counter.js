@@ -1,7 +1,4 @@
 var start;
-
- 
-
 window.onload = function() {
 
   start = new Date();
@@ -25,10 +22,7 @@ window.onload = function() {
 
           welcomeText = "Welcome back! Last visit was " + daysSinceLastVisit + " day(s) ago, "+timeSpentInMinutes + " minute(s) spent on this page during your " + localStorage.visitcount + " visits.";
 
-
-
-
-
+          
       } else {
 
          localStorage.visitcount = 1;
