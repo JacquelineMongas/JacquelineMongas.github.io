@@ -72,3 +72,50 @@ tfoot tr td{
     background-color:#628ca6 ;
 }
 
+
+@media screen and (max-width: 600px) {
+    table thead {
+        border: none;
+    }
+    table,
+    tr,
+    td,
+    th,
+    thead {
+        display: grid;
+    }
+    table {
+        box-shadow: none;
+    }
+    table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+    table td {
+        border-bottom: none;
+        display: block;
+        font-size: 25px;
+        text-align: right;
+    }
+    table td:last-child {
+        border-bottom: 1px solid black;
+    }
+    tbody tr:nth-of-type(1) {
+        display: none;
+    }
+    td:nth-of-type(1):before {
+        content: 'Period';
+    }
+    td:nth-of-type(2):before {
+        content: 'Sales';
+    }
+    td:nth-of-type(3):before {
+        content: 'Global Sales';
+    }
+    table td::before {
+        float: left;
+    }
+    tfoot {
+        width: 100%;
+    }
+}
