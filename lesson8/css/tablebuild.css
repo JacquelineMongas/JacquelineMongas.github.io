@@ -43,15 +43,14 @@ th, td{
     padding: 7px;
 }
 
-tr{
-    background-color:  #e7ffed;
-}
 
 tr:nth-child(odd){
     background: color #e7f0e7;
     
 }
-
+tr:nth-child(even){
+    background-color: #e7ffed;
+}
 th{
     background-color: #628ca6;
     color:#ffffff;
