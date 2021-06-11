@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an assignment page for the Preston site page of week 4 in WDD 230.">
+    <title>Preston Weather</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    
+    
+  </head>
+  <body>
+  <header>
+    <figure class="logo">
+        <img src="images/umbrella-logo.png" alt="logo image">
+    </figure>
+        <section class="headings">
+          <h1>The Umbrella corner</h1>
+          <div class="moto">Close to you, Always!</div>
+        </section>  
+  </header>
+  <nav class="clearfix">
+    <ul class="navigation">
+        <li><a class="ham" href="#">☰ Menu</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>  
+</nav>
+<main>
+    <h2>Storm Center</h2>
+    <div id="StormCenterPage">
+        <form method="get" action="#">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="standardLabel">Full Name</label>
+                    <input type="text" name="fullname" pattern="" placeholder="Full Name" class="standardInput" required>
+
+                <label class="standardLabel">Email</label>
+                    <input type="email" name="email" placeholder="Email" class="standardInput">
+
+                <label class="standardLabel">Phone Number</label>
+                    <input type="tel" name="phone" placeholder="Phone Number" pattern="" class="standardInput" required> 
+
+                <label class="standardLabel">Zip Code</label>
+                    <input type="number" name="zipcode" placeholder="12345" class="stanardInput" required>
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</main>
+ 
+  
+   
+          
+
+          
+            <div id="footerBar">
+              ©<span id="Year"></span> 2021 | Jacqueline Mongas | France |
+              <a href="https://www.byui.edu/online" class="byui">BYUI Online Learning</a>
+              
+               <p>Last Update : <span id="lastUpdate"></span></p>
+            </div>
+          </footer>
+          <script src="/js/currentdate.js"></script>
+          <script src=""></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src=""></script>
+  </body>
+</html>
