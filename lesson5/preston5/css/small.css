@@ -12,41 +12,34 @@ body {
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
+
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 	background-color: lightgreen;
 	padding: 0;
-	display: grid;
-	grid-template-columns: auto 1fr;
-	align-items:center;
-	justify-content:center;
-	width: 100px;
 }
-	
+section.headings{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+section.headings h1{
+    font-size: 25px; 
+    margin: 0;
+}
 
 header img {
 	width: 100px;
 	margin-right: 7px;
 	padding-bottom: 16px;
 	margin-top: 1.4em;
+    margin-left: 0;
+    
 }
-
-.header div {
-	display:flex;
-	align-items: center;
-}
-
-.h1 {
-	font-size: 2rem;
-	margin-top: 1.2em;
-	margin-bottom: .3em;
-}
-
-.h2{
-	display: block;
-	text-align: center;
-	font-size: 25px;
-}
-
 
 .moto {
 	font-style: italic;
@@ -58,6 +51,11 @@ header img {
 
 }
 
+.h2{
+	display: block;
+	text-align: center;
+	font-size: 25px;
+}
 
 .navigation li:not(:first-child) {
 	display: block;
