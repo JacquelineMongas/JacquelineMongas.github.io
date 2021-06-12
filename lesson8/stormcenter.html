@@ -66,7 +66,24 @@
                     <option value="Tornado"></option>  
                 </datalist>
                 <label class="standardLabel"> Storm Severity:&nbsp;&nbsp;&nbsp; 
-                    <span id="severityRange"></span><input type="range" class="slider" id="severityRangeInput" name="severity" min="1" max="10"></label>
+                    <span id="severityRange"><input type="range" name="stormSeverity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="severityRange">5</span>
+                    </label>
+
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
                 <label class="standardLabel">Storm Region
                     <select name="stormRegion" class="standardInput">
                         <option disabled selected>Select Region</option>
@@ -75,13 +92,14 @@
                         <option value="fishhaven">Fish Haven</option>
                     </select>
                 </label>
+                
                 <label class="dangerLabel">Are you in danger?</label>
                 <label class="radioLabel"><input type="radio" name="personaldanger" value="yes">Yes</label>
                 <label class="radioLabel"><input type="radio" name="personaldanger" value="maybe">Maybe</label>
                 <label class="radioLabelLast"><input type="radio" name="personaldanger" value="no">No</label>
                 <label class="standardLabel">comments<textarea name="comment" placeholder="Additional information or comments here" class="standardInput textArea"></textarea></label>
             </fieldset>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Report Storm">
         </form>
         
 

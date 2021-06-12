@@ -1,5 +1,5 @@
-function slider(severityRange) {
-    document.getElementById("value").innerHTML = Range;
+function adjustRating(stormSeverity) {
+    document.getElementById("ratingvalue").innerHTML = stormSeverity;
 }
 
 function selectResponse() {
