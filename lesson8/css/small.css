@@ -1,16 +1,48 @@
 
 
+
+body {
+        background-color:rgb(206, 228, 241);
+        padding: 0;
+        margin: 0;
+        font-family: 'Ubuntu', Sans-serif;
+        background-image: image();
+    } 
+    
+
+
+main{
+    max-width: 80em;
+	margin: 0 auto;
+	padding: 10px;
+    
+}
+
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 	background-color: lightgreen;
 	padding: 0;
 }
+section.headings{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
 
+section.headings h1{
+    font-size: 25px; 
+    margin: 0;
+}
 
 header img {
 	width: 100px;
 	margin-right: 7px;
 	padding-bottom: 16px;
 	margin-top: 1.4em;
+    margin-left: 0;
 }
 
 .moto {
@@ -23,13 +55,6 @@ header img {
 
 }
 
-
-body {
-	background-color:rgb(206, 228, 241);
-	padding: 0;
-	margin: 0;
-	font-family: Roboto, 'Helvetica Neue', sans-serif;
-} 
 
 .navigation li:not(:first-child) {
 	display: block;
