@@ -1,4 +1,4 @@
-const dayNames = [
+/*const dayNames = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -6,7 +6,7 @@ const dayNames = [
     "Thursday", 
     "Friday", 
     "Saturday"
-    ]
+    ]*/
 
 let date = newDate();
 console.log(thedate.getDate());

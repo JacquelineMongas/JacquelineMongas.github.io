@@ -25,11 +25,36 @@ const monthNames = [
     "December"
 ];
 
-const todaysDate = new Date();
-const dayName = dayNames[todaysDate.getDay()];
-const monthName = monthNames[todaysDate.getMonth()];
-const currentDate = `${dayName}, ${todaysDate.getDate()} ${monthName}, ${todaysDate.getFullYear()}`;
+var now = new Date();
+var dayName = dayNames[now.getDay()];
 
-document.getElementById('lastUpdate').textContent = currentDate;
-document.querySelector('#rigthsYear').textContent = `${todaysDate.getFullYear()},`;
-document.getElementById('modifiedTime').textContent = `${document.lastModified}`;
+function checkNeededZeroTime(i) {
+
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+  
+ 
+  var now = new Date();
+  var day = dayNames[now.getDay()];
+  var month = monthNames[now.getMonth()];
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  
+    // add a zero in front of numbers<10
+  
+  hours = checkNeededZeroTime(hours)
+  minutes = checkNeededZeroTime(minutes);
+  seconds = checkNeededZeroTime(seconds);
+  
+   
+  
+  var lastUpdateText = `${day}, ${now.getDate()} ${month}, ${now.getFullYear()} ${hours}:${minutes}:${seconds}`;
+  document.getElementById('lastUpdate').textContent = lastUpdateText;
+
+
+
+
