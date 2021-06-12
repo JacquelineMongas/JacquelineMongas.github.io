@@ -176,6 +176,10 @@ input:required{
     background-color: rgb(198, 238, 198);
 }
 
+input{
+	background-color: rgb(206, 228, 241);
+	
+}
 input:required:valid{
     border-left: lime solid 10px;
 
