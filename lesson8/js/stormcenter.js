@@ -1,3 +1,16 @@
+function slider(severityRange) {
+    document.getElementById("value").innerHTML = Range;
+}
+
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#selectbrowser');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}
+
+//toggle
 const hambutton = document.querySelector('.hum');
 const mainnav = document.querySelector('.navigation')
 
