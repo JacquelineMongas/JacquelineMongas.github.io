@@ -43,13 +43,13 @@
                     <input type="text" name="fullname" pattern="" placeholder="Full Name" class="standardInput" required>
 
                 <label class="standardLabel">Email</label>
-                    <input type="email" name="email" placeholder="Email" class="standardInput">
+                    <input type="email" name="email" placeholder="Email" class="standardInput" required>
 
                 <label class="standardLabel">Phone Number</label>
                     <input type="tel" name="phone" placeholder="Phone Number" pattern="###-###-####" class="standardInput" required> 
 
                 <label class="standardLabel">Zip Code</label>
-                    <input type="number" name="zipcode" placeholder="12345" class="stanardInput" required>
+                    <input type="number" name="zipcode" placeholder="12345" class="standardInput" required>
             </fieldset>
 
             <fieldset>
@@ -57,7 +57,7 @@
                 <label class="standardLabel">Storm Date
                     <input type="date" name="stormdate" class="dateColor standardInput" id="dateColor" onclick="changeColor()"></label>
                 <label class="standardLabel">Storm Type
-                    <input list="stormlist" name="stormtype" placeholder="select type of storm" class="stanardInput"></label>
+                    <input list="stormlist" name="stormtype" placeholder="select type of storm" class="standardInput"></label>
                 <datalist id="stormlist">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -66,8 +66,8 @@
                     <option value="Tornado"></option>  
                 </datalist>
                 <label class="standardLabel"> Storm Severity:&nbsp;&nbsp;&nbsp; 
-                    <span id="severityRange"></span><input type="range" class="slider" id="severityRangeInput" name="severity"  min="1" max="10"></label>
-                <label class="satandardLabel">Storm Region
+                    <span id="severityRange"></span><input type="range" class="slider" id="severityRangeInput" name="severity"  min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="severityRange">5</span></label>
+                <label class="standardLabel">Storm Region
                     <select name="stormRegion" class="standardInput">
                         <option disabled selected>Select Region</option>
                         <option value="preston">Preston</option>
@@ -81,8 +81,9 @@
                 <label class="radioLabelLast"><input type="radio" name="personaldanger" value="no">No</label>
                 <label class="standardLabel">comments<textarea name="comment" placeholder="Additional information or comments here" class="standardInput textArea"></textarea></label>
             </fieldset>
-            <input type="submit" value="Report Storm">
+            <input type="submit" value="Submit">
         </form>
+        
 
 
     </div>
