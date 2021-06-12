@@ -40,13 +40,13 @@
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="standardLabel">Full Name</label>
-                    <input type="text" name="fullname" pattern="" placeholder="Full Name" class="standardInput" required>
+                    <input type="text" name="fullname" pattern="[\sa-zA-Z]{5}" placeholder="Full Name" class="standardInput" required>
 
                 <label class="standardLabel">Email</label>
                     <input type="email" name="email" placeholder="Email" class="standardInput" required>
 
                 <label class="standardLabel">Phone Number</label>
-                    <input type="tel" name="phone" placeholder="Phone Number" pattern="###-###-####" class="standardInput" required> 
+                    <input type="tel" name="phone" placeholder="###-###-####" pattern="[0-9]{10}" class="standardInput" required> 
 
                 <label class="standardLabel">Zip Code</label>
                     <input type="number" name="zipcode" placeholder="12345" class="standardInput" required>
