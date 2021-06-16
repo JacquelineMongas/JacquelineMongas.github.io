@@ -16,39 +16,48 @@ body {
 
 /*heading*/
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 	background-color: lightgreen;
-	display: flex;
-	flex-direction: column;
-	align-items:flex-start;	
+	padding: 0;
 }
-
-figure.logo{
-	width:100px;
-	padding: 0 20px;
-	
-}
-
-
 section.headings{
-	display: flex;
-	flex-direction: column;
-	margin: 10px;
-	
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+section.headings h1{
+    font-size: 25px; 
+    margin: 0;
+}
+
+header img {
+	width: 100px;
+	margin-right: 7px;
+	padding-bottom: 16px;
+	margin-top: 1.4em;
+    margin-left: 0;
+    
 }
 
 .moto {
 	font-style: italic;
 	letter-spacing: 1pt;
 	color: black;
-	font-size: 20px;	
+	margin-left: 0;
+	font-size: 20px;
+	
+
 }
 
-
-.h1 {
+/*.h1 {
 	font-size: 2rem;
 	margin-top: 1.2em;
 	text-align: center;	
-}
+}*/
 
 .h2{
 	display: block;

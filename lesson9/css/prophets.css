@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@491&display=swap');
+
+
+header{
+    text-align: center;
+    color: rgb(24, 107, 216);
+    font-family: 'playfair Display', sans-serif, serif;
+    font-size: 1.5rem;
+}
+
+main{
+    background-color: rgb(218, 211, 211);
+}
+
+section h2{
+    color: rgb(24, 107, 216);
+    margin: 1.5rem;  
+
+}
+
+section p{
+    font-family: 'playfair Display', sans-serif, serif;
+    font-size: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 20px black;
+    padding: 10px;
+    margin: 15px;
+
+}
+
+img{
+    max-width: 65%;
+    border: 1.5px solid #333;
+    margin: 1rem 0px 2rem;
+    box-shadow: 0 0 20px black;
+    
+
+}
+
+section{
+    text-align: center;
+    background-color: rgb(203, 194, 211);
+    border: 1px solid;
+    margin: 2px;
+}
+
+/*medium size*/
+@media only screen and (min-width: 30rem){
+   .cards{
+       grid-template-columns: repeat(2,1fr);
+   } 
+}
+
+/*large*/
+@media only screen and (min-width: 60rem){
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
