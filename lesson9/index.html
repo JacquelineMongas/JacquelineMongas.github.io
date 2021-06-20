@@ -22,7 +22,7 @@
     </header>
     <nav class="clearfix">
         <ul class="navigation">
-            <li><a class="ham" href="#">☰ Menu</a></li>
+            <li><a class="ham" href="#">&#9776;</a></li>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -30,9 +30,9 @@
             <li><a href="#">Storm Center</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>  
-  </nav>
+      </nav>
   <main>
-    <h2 Idaho Information></h2>
+    
     <div id="heroArea">
       <img src="images/heroimg.jpg" alt="Weather change in Idaho" sizes="100vw"
       srcset="images/hero400.jpg 400w,
@@ -40,33 +40,13 @@
       images/heroimg.jpg 1280w">
     </div>
 
-    <div id="TownsInfo">
-      <article>
-        <figure class="infoimg">
-          <img src="images/preston.jpg" alt="Mountans in Preston">
-        </figure>
-        <div class="homeDataPreston"></div>
-      </article> 
-    
-      <article>
-        <figure class="infoimg">
-          <img src="images/sodasprings.jpg" alt="Mist river">
-        </figure>
-        <div class="homeDataSodaSprings"></div>
-      </article> 
-    
-      <article>
-        <figure class="infoimg">
-          <img src="images/fishhaven.jpg" alt="Sunny Fish Haven">
-        </figure>
-        <div class="homeDataFishHaven"></div>
-      </article> 
-    </div>
+    <div class="cards"></div>
 
-    <div id="ArticleArea">
+    <div id="articleArea">
       <h3> Today's Weather Situation</h3>
+
       <figure class="articleImg">
-        <img src="images/peopleInparc1.png" alt="People in Parc">
+        <img src="images/peopleInparc2.jpg" alt="People in Parc">
       </figure>
       <p>Summers bring warm daytime highs around 90°F in Boise and 83°F in Sun Valley.
          Most of the state falls somewhere in between, with cooler temperatures in the 
@@ -83,8 +63,8 @@
           and Coeur d’Alene have lots of festivals and special events planned.
          </p>
     </div>
-
   </main>
+
   <footer>
     <div class="contactArea"> 
         <img id="mapImg" src="images/preston-map.png" alt="image of Preston map">
@@ -104,14 +84,19 @@
         </section>
       </div>
 
+      <div class=""><a id="wireframes" href="home-wireframe.html" target="_blank">Link to Wireframes</a></div>
+
     <div id="footerBar">
         ©<span id="Year"></span> 2021 | Jacqueline Mongas | France |
         <a href="https://www.byui.edu/online" class="byui">BYUI Online Learning</a>
         
-         <p>Last Update : <span id="lastUpdate"></span></p>
+         <p>Last Update : <span id="lastUpdate"></span></p><br>
+
+         
       </div>
   </footer>
   <script src="/js/currentdate.js"></script>
+  <script src="/js/toggle.js"></script>
   <script src="js/home.js"></script>
 </body>
 </html>

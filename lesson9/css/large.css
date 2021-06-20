@@ -12,5 +12,15 @@
 		font-size: 20px;
 	}
 
+	.cards section{
+		flex-direction: row;
+	}
+
+	.cards section p{
+		flex-direction: column;
+		align-items: center;
+
+	}
+ 
 
 }

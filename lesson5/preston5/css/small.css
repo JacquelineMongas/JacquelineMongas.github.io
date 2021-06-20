@@ -243,6 +243,7 @@ h4{
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 0 10px black;
+	object-fit: cover;
 	
 }
 
