@@ -30,18 +30,14 @@
     }
 
     /*home page*/
-    .card section{
+    .cards section{
         flex-direction: row;
-
-    }
-
-    .cards section {
         max-width: 600px;
         flex-wrap: wrap;
     }
     
-    .cards content {
-      display: flex;
+    .cards  {
+        display: flex;
         flex-direction: row;
     }
     
