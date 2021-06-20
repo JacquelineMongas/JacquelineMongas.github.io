@@ -311,13 +311,12 @@ font-size: 15px;
 .cards section{
 	display: flex;
 	flex-direction: column;
-	overflow: auto;
 	background-color: #9e9ea177;
     border-radius: .5em;
     padding: 15px;
-    margin-top: 10px;
+    margin: 10px;
     text-align: center;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, .3);
 	border: .5px solid #383737;
 	max-width: 600px;
 	align-items: center;
@@ -325,8 +324,8 @@ font-size: 15px;
 
 
 
-/*.cards section {
-    max-width: 600px;
+.cards  {
+    max-width: 100;
   	margin: 10px;
 	padding: 15px;
 	background-color: #9e9ea177;
@@ -336,7 +335,7 @@ font-size: 15px;
 	box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
 	justify-content: center;
 	
-}*/
+}
 
 
 .cards section h2{
@@ -349,6 +348,8 @@ font-size: 15px;
 }
 
 .cards section h4{
+	font-style: italic;
+	font-size: 20px;
     margin-bottom: .8em;
     color: #333;
 }
@@ -361,6 +362,7 @@ font-size: 15px;
 	
 
 }
+
 
 .cards section img{
     width: 50%;

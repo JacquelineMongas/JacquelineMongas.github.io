@@ -28,4 +28,25 @@
         padding: .6rem 1rem;
         font-size: 20px;
     }
+
+    /*home page*/
+    .card section{
+        flex-direction: row;
+
+    }
+
+    .cards section {
+        max-width: 600px;
+        flex-wrap: wrap;
+    }
+    
+    .cards content {
+      display: flex;
+        flex-direction: row;
+    }
+    
+    .cards:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    
 }

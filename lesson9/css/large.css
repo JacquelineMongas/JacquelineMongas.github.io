@@ -11,16 +11,16 @@
     .navigation a{
 		font-size: 20px;
 	}
+.cards{
+	flex-direction: row;
+}
 
-	.cards section{
-		flex-direction: row;
-	}
-
-	.cards section p{
-		flex-direction: column;
-		align-items: center;
-
-	}
- 
+.cards section{
+	flex-direction:column;
+	align-items: center;
+}
+.cards section:nth-child(odd){
+	flex-direction: column;
+}
 
 }
