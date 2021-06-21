@@ -30,19 +30,20 @@
     }
 
     /*home page*/
-    .cards section{
-        flex-direction: row;
-        max-width: 600px;
-        flex-wrap: wrap;
-    }
-    
-    .cards  {
+    .cards section {
         display: flex;
         flex-direction: row;
     }
     
-    .cards:nth-child(odd) {
+    #cards section:nth-child(odd){
         flex-direction: row-reverse;
     }
     
-}
+    .cards section p{
+        width: 50%;
+    }
+
+    .cards section img{
+        width: 50%;
+    }
+    }

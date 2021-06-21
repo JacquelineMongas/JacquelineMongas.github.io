@@ -11,9 +11,7 @@
     .navigation a{
 		font-size: 20px;
 	}
-.cards{
-	flex-direction: row;
-}
+
 
 .cards section{
 	flex-direction:column;
@@ -21,6 +19,14 @@
 }
 .cards section:nth-child(odd){
 	flex-direction: column;
+}
+
+.cards section p{
+	width: 100%;
+}
+
+.cards section img{
+	width: 100%;
 }
 
 }

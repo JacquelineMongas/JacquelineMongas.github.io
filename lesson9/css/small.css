@@ -145,16 +145,13 @@ display: block;
     position: relative;
     margin: 10px auto;
     width: 960px;
-    height: 380px;
-
-    
+    height: 380px;  
 }
     
-.heroArea img{
-   margin: 0;
-   max-width: 900px;
-   height: 380px;
-   padding: 0;
+#heroArea img{
+   margin-right: 10px;
+   max-width: 100%;
+   padding: 10px;
 }
 
 h3{
@@ -289,6 +286,7 @@ margin-bottom: 10px;
 	width: 100%;
 	max-width: 400px;
 	border: 0.5em black;
+	margin-left: 20px;
 }
 
 
@@ -340,6 +338,7 @@ font-size: 15px;
 	box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
 	justify-content: center;
 	
+	
 }
 
 
@@ -360,17 +359,19 @@ font-size: 15px;
 }
 
 .cards section p {
-    line-height: 1.5;
+    line-height: 0.5;
 	padding: 15px;
 	text-align: center;
 	display: flex;
+	align-items: center;
 	
 
 }
 
 
 .cards section img{
-    width: 50%;
+    width: 100%;
     border-radius: .5em;
     margin: .5em 0;
+	box-shadow: 0 0 20px black;
 }
