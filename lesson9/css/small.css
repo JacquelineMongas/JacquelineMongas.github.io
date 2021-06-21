@@ -4,7 +4,7 @@ background-color:rgb(206, 228, 241);
 padding: 0;
 margin: 0;
 font-family: 'Ubuntu', Sans-serif;
-background-image: url();
+
     
 } 
 
@@ -148,7 +148,7 @@ display: block;
     
 .heroArea img{
    margin: 10px auto;
-   max-width: 100%;
+   max-width: 700px;
    height: 380px;
 }
 
