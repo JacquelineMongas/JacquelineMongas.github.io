@@ -6,7 +6,7 @@ main{
 
 
 body {
-	background-color:lightskyblue;
+	background-color:rgb(206, 228, 241);
 	padding: 0;
 	margin: 0;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
@@ -21,8 +21,12 @@ header {
 }
 
 img {
-	width: 80%;
-	margin: 0;
+	width: 100px;
+	margin-right: 7px;
+	padding-bottom: 16px;
+	margin-top: 1.4em;
+	margin-left: 0;
+
 
 }
 
@@ -107,7 +111,7 @@ nav ul li a{
 
 
 nav ul li.active a {
-	background-color: lightskyblue;
+	background-color: rgb(206, 228, 241);
 	margin: 0;
 }
 
