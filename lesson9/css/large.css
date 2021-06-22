@@ -13,20 +13,26 @@
 	}
 
 
-.cards section{
+.towns{
+	flex-direction: row;
+
+	}
+
+.towns section{
 	flex-direction:column;
 	align-items: center;
 }
-.cards section:nth-child(odd){
+.towns section:nth-child(odd){
 	flex-direction: column;
 }
 
-.cards section p{
+#towns section p{
 	width: 100%;
 }
 
-.cards section img{
+.towns section img{
 	width: 100%;
+	align-items: center;
 }
 
 }

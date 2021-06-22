@@ -30,20 +30,24 @@
     }
 
     /*home page*/
-    .cards section {
-        display: flex;
+    
+    .towns section {
         flex-direction: row;
+        
     }
     
-    #cards section:nth-child(odd){
+    .towns section:nth-child(odd){
         flex-direction: row-reverse;
     }
     
-    .cards section p{
+    #towns section p{
         width: 50%;
     }
 
-    .cards section img{
+    .towns section img{
         width: 50%;
+        
     }
+
+    
     }
