@@ -10,7 +10,7 @@ fetch(requestURL)
         for (let i = 0; i < towns.length; i++) {
 
             if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
-                let card = document.createElement('section');
+                let towns = document.createElement('section');
                 let h2 = document.createElement('h2');
                 let h3 = document.createElement('h3');
                 let yearFounded = document.createElement('p');
@@ -26,14 +26,14 @@ fetch(requestURL)
                 img.setAttribute('src', "images/" + towns[i].photo);
                 img.setAttribute('alt', "a nice photo of " + towns[i].name);
 
-                card.appendChild(h2);
-                card.appendChild(h3);
-                card.appendChild(yearFounded);
-                card.appendChild(population);
-                card.appendChild(rainfall);
-                card.appendChild(img);
+                towns.appendChild(h2);
+                towns.appendChild(h3);
+                towns.appendChild(yearFounded);
+                towns.appendChild(population);
+                towns.appendChild(rainfall);
+                towns.appendChild(img);
 
-                document.querySelector('div.towns').appendChild(towns);
+                document.querySelector('#towns').appendChild(towns);
             }
         }
 

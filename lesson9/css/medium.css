@@ -1,21 +1,22 @@
 /* Media Query for medium+ views */
 @media only screen and (min-width: 40em) {
-    .navigation{
+    #navigation{
         display:flex;
     }
 
-    .navigation li{
+    #navigation li{
         display: block;
         flex: 1 1 auto;
     }
 
-    .navigation a{
+    #navigation a{
         text-align: center;
     }
 
-    .navigation li:first-child{
+    #navigation li:first-child{
         display:none;
     }
+    
     nav ul{
         margin:0 ;
     }
@@ -31,20 +32,21 @@
 
     /*home page*/
     
-    .towns section {
+    #towns section {
         flex-direction: row;
         
     }
     
-    .towns section:nth-child(odd){
+    #towns section:nth-child(odd){
         flex-direction: row-reverse;
     }
     
     #towns section p{
         width: 50%;
+        align-items: center;
     }
 
-    .towns section img{
+    #towns section img{
         width: 50%;
         
     }
