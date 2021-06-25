@@ -49,42 +49,15 @@
 
         <div id="forecastArea">
           <h2>Five day Forecast</h2>
-          <span id=""></span>
+          <span id="forcastFive"></span>
 
-          <div class="five-day"></div>
-            <section>
-              <h3 id="day1">Wed</h3>
-              <div class="weather-icon"></div>
-              <img src="images/cloudy.png" alt="cloudy">
-              <span>89&deg;F</span>
-          </section>
-          <section>
-              <h3 id="day2">Thur</h3>
-              <div class="weather-icon"></div>
-              <img src="images/thunder.png" alt="thunder">
-              <span>87&deg;F</span>
-          </section>
-          <section>
-              <h3 id="day3">Fri</h3>
-              <div class="weather-icon"></div>
-              <img src="images/sun.png" alt="sun">
-              <span>78&deg;F</span>
-          </section>
-          <section>
-              <h3 id="day4">Sat</h3>
-              <div class="weather-icon"></div>
-              <img src="images/sunny.png" alt="sunny">
-              <span>75&deg;F</span>
-          </section>
-          <section>
-              <h3 id="day5">Sun</h3>
-              <div class="weather-icon"></div>
-              <img src="images/sunny.png" alt="sunny">
-              <span>72&deg;F</span>
+              <p><span id="daysOfWeek1"></span> : <span id="forecast1"></span>&deg; F</p>
+              <p><span id="daysOfWeek2"></span> : <span id="forecast2"></span>&deg; F</p>
+              <p><span id="daysOfWeek3"></span> : <span id="forecast3"></span>&deg; F</p>
+              <p><span id="daysOfWeek4"></span> : <span id="forecast4"></span>&deg; F</p>
+              <p><span id="daysOfWeek5"></span> : <span id="forecas51"></span>&deg; F</p>
+
             
-
-          </section>
-
           <div id="articleArea">
       <h3> Today's Weather Situation</h3>
 
@@ -105,7 +78,8 @@
           Temperatures are just about perfect and most resort towns like Sun Valley 
           and Coeur d’Alene have lots of festivals and special events planned.
          </p>
-    </div>
+        </div>
+        </div>
       </main>
 
         <footer>
@@ -135,8 +109,12 @@
               
                <p>Last Update : <span id="lastUpdate"></span></p><br>
       
-               
             </div>
           </footer>
+
+          <script src="/js/currentdate.js"></script>
+          <script src="/js/toggle.js"></script>
+          <script src="js/forecast.js"></script>
+          <script src="js/windchill.js"></script>
   </body>
 </html>
