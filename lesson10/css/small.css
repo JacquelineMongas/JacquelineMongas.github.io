@@ -110,7 +110,7 @@ body {
     margin: 0;
     }
     
-    #navigation li {
+    .navigation li {
     display: block;
     }
     
@@ -161,13 +161,15 @@ body {
 /*weather Summary box*/
 .weatherSummary{
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 20px;
+	left: 20px;
 	background-color: rgb(206, 228, 241);
 	border: .5px solid;
 	padding: 10px;
 	box-shadow: 0 0 20px black;
+    border: .5px solid #383737;
 	grid-auto-columns: auto auto;
+    border-radius: .5em;
 	
 }
 .weatherSummary h2{
@@ -185,6 +187,10 @@ body {
 }
 
 /*five day forecast*/
+/*#forecastArea {
+	display: none;
+}*/
+
 h2{
 	font-weight: bold;
 	text-align: center;
@@ -193,50 +199,56 @@ h2{
 	
 }
 
-.forecastDay{
+.forecastArea{
 	display:flex;
 	width: 100%;
 	border: 2px solid black;
-	text-align: center;
+	
 }
-.five-day{
+#forecastFive{
 	display: grid;
 	margin:auto;
 	grid-template-columns: repeat(5, 1fr);
-	max-width: 650px;
+    border: .5px solid #383737;
+    border-radius: .5em;
+    margin: 20px;
+	padding: 20px;
+    background-color: #bebec077;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
+    text-align: center;
+    
 }
 
-.five-day section{
+
+.forecastcol{
+	display: flex;
+	flex-direction: column;
 	border: solid .5px black;
 	padding: 0;
-	align-items: center;
-}
-
-.five-day div{
-	margin: 0 auto;
-	
-}
-
-.five-day h3{
-	background:  green;
 	text-align: center;
-	padding: .5rem;
+}
+
+.forecastDay {
 	margin: 0;
-}
-
-
-.five-day img{
-	width: 60px;
-	background-position: -11px -13px;
-	transform: scale(.9);
-	
-	
-}
-
-.five-day span{
+	background: green;
 	text-align: center;
-	padding: .5rem;
-	display: block;
+	width: 100%;
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	font-weight: bold;
+    text-shadow: 2px 2px 2px #555;
+    color: #333;
+}
+.forecastCol img {
+	padding-top: 10px;
+	max-width: 90%;
+	height:	auto; 
+    align-items: center;
+}
+.forecastTemp {
+	color: #333;
+	font-weight: bold;
+    text-align: center;
 }
     
 
@@ -249,7 +261,7 @@ h3{
 
 #articleArea {
 	border: .5px solid #383737;
-	background-color: #9e9ea177;
+	background-color: #bebec077;
 	border-radius: .5em;
 	margin: 20px;
 	padding: 20px;

@@ -57,14 +57,13 @@ function checkNeededZeroTime(i) {
 
 
   //menu
-const hamButton = document.querySelector('.ham');
-const mainMenu = document.querySelector('.navigation');
+  window.addEventListener('load', () => {
+    const hambutton = document.querySelector('.ham');
+    const mainnav = document.querySelector('.navigation')
 
-hamButton.addEventListener('click',() =>{mainMenu.classList.toggle('responsive')}, false);
+    hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-window.onresize = () => {
-    if(window.innerWidth > 760){
-        mainMenu.classList.remove('responsive');
-    }
-}
+    // To resolve the mid resizing issue with class on
+    window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+})
 

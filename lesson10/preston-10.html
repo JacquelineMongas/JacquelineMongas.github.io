@@ -22,6 +22,7 @@
             </section>  
       </header>
       <nav class="clearfix">
+        
         <ul id="navigation">
             <li><a class="ham" href="#">&#9776;</a></li>
             <li class="active"><a href="index.html">Home</a></li>
@@ -37,9 +38,10 @@
         <h2>Preston Idaho</h2>
         <div class="heroArea">
           <img src="images/heroimg.jpg" alt="image of Preston Idaho">
+
           <section class="weatherSummary">
           <h2>Weather Summary</h2>
-          <label>Currently:</label><p><span id="current"></span></p>
+          <label>Currently:</label><p><span id="currentTemp"></span></p>
           <label>Temperature:</label><p><span id="temperature"></span>&deg;F</p>
           <label>Wind Chill:</label><p><span id="windChill"></span></p>
           <label>Humidity:</label><p><span id="humidity"></span>%</p>
@@ -49,14 +51,33 @@
 
         <div id="forecastArea">
           <h2>Five day Forecast</h2>
-          <span id="forcastFive"></span>
-
-              <p><span id="daysOfWeek1"></span> : <span id="forecast1"></span>&deg; F</p>
-              <p><span id="daysOfWeek2"></span> : <span id="forecast2"></span>&deg; F</p>
-              <p><span id="daysOfWeek3"></span> : <span id="forecast3"></span>&deg; F</p>
-              <p><span id="daysOfWeek4"></span> : <span id="forecast4"></span>&deg; F</p>
-              <p><span id="daysOfWeek5"></span> : <span id="forecas51"></span>&deg; F</p>
-
+          <span id="forecastFive">
+                <div class="forecastCol">
+                    <p class="forecastDay"><span id="dayWeek1"></span></p>
+                    <img id="icon1" src="#" alt="">
+                    <p class="forecastTemp"><span id="forecast1"></span>&deg;F</p>
+                </div>
+                <div class="forecastCol">
+                    <p class="forecastDay"><span id="dayWeek2"></span></p>
+                    <img id="icon2" src="#" alt="">
+                    <p class="forecastTemp"><span id="forecast2"></span>&deg;F</p>
+                </div>
+                <div class="forecastCol">
+                    <p class="forecastDay"><span id="dayWeek3"></span></p>
+                    <img id="icon3" src="#" alt="">
+                    <p class="forecastTemp"><span id="forecast3"></span>&deg;F</p>
+                </div>
+                <div class="forecastCol">
+                    <p class="forecastDay"><span id="dayWeek4"></span></p>
+                    <img id="icon4" src="#" alt="">
+                    <p class="forecastTemp"><span id="forecast4"></span>&deg;F</p>
+                </div>
+                <div class="forecastCol">
+                    <p class="forecastDay"><span id="dayWeek5"></span></p>
+                    <img id="icon5" src="#" alt="">
+                    <p class="forecastTemp"><span id="forecast5"></span>&deg;F</p>
+                </div>
+              </span>
             
           <div id="articleArea">
       <h3> Today's Weather Situation</h3>
@@ -64,7 +85,8 @@
       <figure class="articleImg">
         <img src="images/peopleInparc2.jpg" alt="People in Parc">
       </figure>
-      <p>Summers bring warm daytime highs around 90°F in Boise and 83°F in Sun Valley.
+
+        <p>Summers bring warm daytime highs around 90°F in Boise and 83°F in Sun Valley.
          Most of the state falls somewhere in between, with cooler temperatures in the 
          mountains and up north, and warmer weather along the southern plains. Thunderstorms 
          are common across Idaho during the summer months, which are relatively 
@@ -101,8 +123,6 @@
               </section>
             </div>
       
-            <div class=""><a id="wireframes" href="home-wireframe.html" target="_blank">Link to Wireframes</a></div>
-      
           <div id="footerBar">
               ©<span id="Year"></span> 2021 | Jacqueline Mongas | France |
               <a href="https://www.byui.edu/online" class="byui">BYUI Online Learning</a>
@@ -113,7 +133,6 @@
           </footer>
 
           <script src="/js/currentdate.js"></script>
-          <script src="/js/toggle.js"></script>
           <script src="js/forecast.js"></script>
           <script src="js/windchill.js"></script>
   </body>

@@ -8,20 +8,24 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
+    const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    let newList = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
     
-    let day = 0;
-    const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    const fiveDayForecast  = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
-    //console.log(fiveDayforecast);
+    for (let day = 0; day <= 4; day ++) {
+        let d = new Date(newList[day].dt_txt);
+        document.getElementById(`dayWeek${day+1}`).textContent = dayOfWeek[d.getDay()];
+        document.getElementById(`forecast${day+1}`).textContent = newList[day].main.temp.toFixed(0);
 
-    for (let day = 0; day <= 4; day++){
-        let d = new Date (fiveDayForecast[day].dt_text);
-        document.getElementById(`daysOfWeek${day+1}`).textContent = daysOfWeek[d.getDate()];
-        document.getElementById(`forecast${forecast+1}`).textContent = fiveDayForecast[forecast()];
+        const imgalt = newList[day].weather[0].description;
+        const imagesrc = 'https://openweathermap.org/img/wn/' + newList[day].weather[0].icon + '@2x.png';
+        document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
+        document.getElementById(`icon${day+1}`).setAttribute('alt', imgalt);
     }
 
 
-
-
-    
   });
+
+
+  
+
+  
