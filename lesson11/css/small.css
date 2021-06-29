@@ -82,18 +82,19 @@ body {
     
     }
     
-    #navigation{
+    .navigation{
     max-width: 90em;
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
     }
     
     
     #navigation a{
     display: block;
     padding: 0.75rem;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -154,8 +155,8 @@ body {
 
 }
 
-.heroArea img{
-	margin: 10px auto;
+#heroArea img{
+	margin: 20px auto;
 	max-width: 100%;
 	height: 380px;
     
@@ -313,7 +314,7 @@ form label{
     margin: 0;
  }
         
- .Slider{
+ .slider{
     display: block;
     margin-top: 2px;  
 
@@ -503,9 +504,21 @@ footer p{
 
 .gallery figcaption{
 	text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
+.gallery img{
+    box-shadow: 4px 3px 3px 3px rgba(0, 0, 0, .3);
 
+}
+
+#welcome{
+    background-color: lightgreen;
+    font-size: 20px;
+    color: black;
+    
+}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
