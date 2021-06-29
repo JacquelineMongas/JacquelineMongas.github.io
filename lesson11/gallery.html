@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
     <head>
         <title>The Gallery page</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Assignment page for the weather website page, WDD 230.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/small.css" rel="stylesheet">
         <link href="css/medium.css" rel="stylesheet">
         <link href="css/large.css" rel="stylesheet">
+        <script src="js/lazy-load.js" defer></script>
     </head>
     <body>
         <header>
@@ -93,9 +95,16 @@
                  <p>Last Update : <span id="lastUpdate"></span></p>
               </div>
               <script src="js/currentdate.js"></script>
-              <script src="js/toggle.js" defer></script>
-              <script src="js/lazy-load.js" defer></script>
-              <script src="js/counter.js" defer></script>
+              
+              <script src="js/counter.js" ></script>
+              <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+              <script>
+                WebFont.load({
+           google: {
+             families: ['Ubuntu', 'sans-serif']
+           }
+         });
+           </script>
 
           </footer>
     </body>

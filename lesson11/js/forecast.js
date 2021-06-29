@@ -32,13 +32,13 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     //console.log(jsObject);
-    document.getElementById('.weatherSummary.temperature').textContent = jsObject.main.temp;
-    document.getElementById('.weatherSummary.currentTemp').textContent = jsObject.weather[0].description;
-    document.getElementById('.weatherSummary.humidity').textContent = jsObject.main.humidity;
-    document.getElementById('.weatherSummary.windSpeed').textContent = jsObject.wind.speed;
+    document.getElementById('temperature').textContent = jsObject.list[0].main.temp;
+    document.getElementById('currentTemp').textContent = jsObject.list[0].weather[0].description;
+    document.getElementById('humidity').textContent = jsObject.list[0].main.humidity;
+    document.getElementById('windSpeed').textContent = jsObject.list[0].wind.speed;
       //Windchill Calc
       //INPUT 
-      let temperature = parseFloat(jsObject.main.temp);
+      let temperature = parseFloat(jsObject.list[0].main.temp);
       let windSpeed = parseFloat(jsObject.windSpeed);
       //PROCESSING
       let windchill = "N/A";

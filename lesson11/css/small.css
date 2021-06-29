@@ -94,7 +94,7 @@ body {
     #navigation a{
     display: block;
     padding: 0.75rem;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: black;
     font-weight: bold;

@@ -58,7 +58,7 @@ function checkNeededZeroTime(i) {
 
   //menu
   const hamButton = document.querySelector('.ham');
-  const mainMenu = document.querySelector('.navigation');
+  const mainMenu = document.querySelector('#navigation');
   
   hamButton.addEventListener('click', () =>{mainMenu.classList.toggle('responsive')}, false);
   
