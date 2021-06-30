@@ -37,6 +37,7 @@ body {
     margin: 0;
     }
     
+       
     header img {
     width: 100px;
     margin-right: 7px;
@@ -255,6 +256,43 @@ h2{
 }
     
 
+/*event section*/
+.eventSection{
+    max-width: 400px;
+    align-content: center;
+    text-shadow: 2px 2px 2px #555;
+    color: #333;
+    background-color: #bebec077;
+    border-radius: .5em;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
+    border: .5px solid #383737;
+    margin: 15px auto;
+	padding: 15px;
+    overflow: auto;
+}
+
+.eventArea{
+    border: 1px solid;
+    background-color: lightgreen;
+    margin: 5px;
+    padding: 15px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventArea li {
+	list-style-type: square;
+}
+.eventArea ul {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
  /*Article Area*/
 h3{
 	font-weight: bold;
@@ -280,12 +318,16 @@ h3{
     color: #333;
 }
 #articleArea img {
+    width: 100%;
+    height: auto;
 	max-width: 700px;
 	display: block;
 	box-shadow: 0 0 20px #000000;
 	border-radius: .5em;
 	float: right;
-    margin: 1em;
+    margin: 20px auto ;
+    padding: 0;
+    align-items: center;
 }	
 
        
