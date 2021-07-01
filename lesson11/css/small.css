@@ -320,7 +320,7 @@ h3{
 #articleArea img {
     width: 100%;
     height: auto;
-	max-width: 700px;
+	max-width: 500px;
 	display: block;
 	box-shadow: 0 0 20px #000000;
 	border-radius: .5em;
