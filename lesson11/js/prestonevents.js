@@ -6,16 +6,14 @@ fetch(requestURL)
 })
 
 .then(function (jsonObject) {
-    const towns = jsonObject['towns'];
-    const prestonfilter = towns.filter(x => x.name == "Preston");
-    let prestonEvents = prestonfilter[0].events;
-    let ul = document.createElement('ul'); 
+  const towns = jsonObject['towns'];
+  const townName = towns.filter(x => x.name.includes("Preston"));
+  console.log(townName)
+  
+  const events = townName[0].events;
 
-    prestonEvents.forEach(events => {
-    let listItem = document.createElement('li');
-    listItem.innerHTML = events;
-    ul.append(events);
-  }); 
+  events.forEach(event => {
+      let event = document.createElement('p');
 
-  document.getElementById(".PrestonEvents").appendChild("events");
+  })
 });
