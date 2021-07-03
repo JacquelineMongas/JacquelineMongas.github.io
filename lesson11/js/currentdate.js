@@ -57,15 +57,22 @@ function checkNeededZeroTime(i) {
 
 //menu
 const hamButton = document.querySelector('.ham');
-const mainMenu = document.querySelector('.navigation');
+const toggleMenu = document.querySelector('.navigation');
 
 hamButton.addEventListener('onclick', () =>{Menu.classList.toggle('responsive')}, false);
 
 window.onresize = () => {
     if(window.innerWidth > 760){
-        mainMenu.classList.remove('responsive');
+        toggleMenu.remove('responsive');
     }
   }
   
 
+  //pancake
+
+  let date = Datenow();
+  console.log(thedate.getDate());
+  if (thedate.getDate()==6){
+      document.querySelector('.Pancakes').style.display='block';
+  }
 

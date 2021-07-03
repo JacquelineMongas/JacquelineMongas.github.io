@@ -57,6 +57,12 @@ body {
     
     }
     
+    .pancakes{
+        padding: 1em;
+        text-align: left;
+
+    }
+
     /*navigation*/
     #navigation li:not(:first-child) {
     display: block;
@@ -201,7 +207,7 @@ h2{
 	font-weight: bold;
 	text-align: center;
     text-shadow: 2px 2px 2px #555;
-    color: #333;
+    color: black;
 	
 }
 
@@ -242,8 +248,7 @@ h2{
 	padding-top: 20px; 
 	padding-bottom: 20px; 
 	font-weight: bold;
-    
-    color: rgb(29, 28, 28);
+    color: black;
 }
 .forecastCol img {
 	padding-top: 10px;
@@ -252,7 +257,7 @@ h2{
     align-items: center;
 }
 .forecastTemp {
-	color: #333;
+	color: black;
 	font-weight: bold;
     text-align: center;
 }
@@ -321,7 +326,7 @@ h3{
 #articleArea img {
     width: 100%;
     
-	max-width: 500px;
+	max-width: 300px;
 	display: block;
 	box-shadow: 0 0 20px #000000;
 	border-radius: .5em;
@@ -334,6 +339,7 @@ h3{
     font-size: 1.2rem;
     text-align: justify;
     padding: 1rem;
+    line-height: normal;
 
 }
 
