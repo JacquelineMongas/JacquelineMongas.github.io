@@ -173,7 +173,6 @@ body {
 	background-color: rgb(206, 228, 241);
 	border: .5px solid;
 	padding: 10px;
-	box-shadow: 0 0 20px black;
     border: .5px solid #383737;
 	grid-auto-columns: auto auto;
     border-radius: .5em;
@@ -186,12 +185,15 @@ body {
 .weatherSummary label{
 	text-align: right;
 	font-weight: bold;
+    color: green;
 }
 
 .weatherSummary p{
 	margin: 0;
 	padding: 2px;
 }
+
+
 
 /*five day forecast*/
 
@@ -240,8 +242,8 @@ h2{
 	padding-top: 20px; 
 	padding-bottom: 20px; 
 	font-weight: bold;
-    text-shadow: 2px 2px 2px #555;
-    color: #333;
+    
+    color: rgb(29, 28, 28);
 }
 .forecastCol img {
 	padding-top: 10px;
@@ -257,11 +259,10 @@ h2{
     
 
 /*event section*/
-.eventSection{
+.events{
     max-width: 400px;
     align-content: center;
-    text-shadow: 2px 2px 2px #555;
-    color: #333;
+    color: rgb(22, 21, 21);
     background-color: #bebec077;
     border-radius: .5em;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
@@ -319,16 +320,22 @@ h3{
 }
 #articleArea img {
     width: 100%;
-    height: auto;
+    
 	max-width: 500px;
 	display: block;
 	box-shadow: 0 0 20px #000000;
 	border-radius: .5em;
 	float: right;
-    margin: 20px auto ;
+    margin: 20px 20px auto ;
     padding: 0;
-    align-items: center;
-}	
+}
+
+#articleArea p{
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 1rem;
+
+}
 
        
 /*storm center - form*/
