@@ -70,9 +70,9 @@ window.onresize = () => {
 
   //pancake
 
-  let date = Datenow();
-  console.log(thedate.getDate());
-  if (thedate.getDate()==6){
+  let date = new Date();
+  //console.log(dayName.getDate());
+  if (dayName.getDate()==6){
       document.querySelector('.Pancakes').style.display='block';
   }
 
