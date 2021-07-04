@@ -32,24 +32,26 @@
 
     /*home page*/
     
-    #towns section {
+    #townsData article {
         flex-direction: row;
+        width: 100%;
         
     }
+   
     
-    #towns section:nth-child(odd){
+    #townsData article:nth-child(odd){
         flex-direction: row-reverse;
     }
     
-    #towns section p{
-        width: 50%;
-        align-items: center;
-    }
+    
+    
 
-    #towns section img{
+    .townsData img{
         width: 50%;
         
     }
+
+    
 
     
     }

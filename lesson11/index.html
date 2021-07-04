@@ -24,7 +24,7 @@
     </header>
     <nav class="clearfix">
         <ul id="navigation">
-          <li><a class="ham" href="#" onclick="toggleMenu">&#9776;</a></li>
+          <li><a href="#" id="hamBtn">&#9776; Menu</a></li>
             <li class="active"><a href="index.html">🏠Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodasprings.html">Soda Springs</a></li>
@@ -39,49 +39,34 @@
       <img src="images/heroimg.jpg" alt="Weather change in Idaho" sizes="100vw"
       srcset="images/hero400.jpg 400w,
       images/hero800.jpg 800w,
-      images/heroimg.jpg">
+      images/heroimg.jpg 1280w">
     </div>
 
-    <div id="towns">
-      <section>
-        <div class="data">
-          <h2 id="Preston">Preston</h2>
-        <h3>Home of Napoleon Dynamite</h3>
-        <p>Year Founded: 1866</p>
-        <p>Population: 5204</p>
-        <p>Annual Rain fall: 16.65</p>
-        </div>
+    <h3>Information on Idaho towns</h3>
 
-        <img src="images/preston.jpg" alt="Preston">
-      </section>
-
-      <section>
-        <div class="data">
-          <h2 id="Soda Springs">Soda Springs</h2>
-        <h3>Historic Oregon Trail Oasis. This is on Us</h3>
-        <p>Year Founded: 1858</p>
-        <p>Population: 2985</p>
-        <p>Annual Rain fall: 15.75</p>
-        </div>
-
-        <img src="images/sodasprings.jpg" alt="Soda Springs">
-      </section> 
-      
-      <section> 
-        <div class="data">
-          <h2 id="Fish Haven">Fish Haven</h2>
-        <h3>This is Fish Haven</h3>
-        <p>Year Founded: 1864</p>
-        <p>Population: 501</p>
-        <p>Annual Rain fall: 14.2</p>
-        </div>
-
-        <img src="images/preston.jpg" alt="Fish Haven">
-      </section>
-     
-      
-    </div>
-
+    <div id="townsData">
+      <article>
+        <div class="prestondata"></div>
+          <figure class="townImg">
+              <img src="images/preston.jpg" alt="Preston Image">
+          </figure>
+          
+      </article>
+      <article>
+        <div class="sodaSpringsdata"></div>
+          <figure class="townImg">
+              <img src="images/sodasprings.jpg" alt="Soda Springs image">
+          </figure>
+          
+      </article>
+      <article>
+        <div class="fishHavendata"></div>
+          <figure class="townImg">
+              <img src="images/fishhaven.jpg" alt="Fish Haven image">
+          </figure>
+          
+      </article>
+  </div>
     <div id="articleArea">
       <h3> Today's Weather Situation</h3>
 
@@ -137,7 +122,6 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/home.js"></script>
-    <script src="js/lazy-load.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({

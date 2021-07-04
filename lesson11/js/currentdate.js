@@ -56,23 +56,16 @@ function checkNeededZeroTime(i) {
   document.getElementById('lastUpdate').textContent = lastUpdateText;
 
 //menu
-const hamButton = document.querySelector('.ham');
-const toggleMenu = document.querySelector('.navigation');
+function toggleMenu() {
+  document.getElementsByClassName("#hamBtn")[0].classList.toggle("responsive");
+}
 
-hamButton.addEventListener('onclick', () =>{Menu.classList.toggle('responsive')}, false);
-
-window.onresize = () => {
-    if(window.innerWidth > 760){
-        toggleMenu.remove('responsive');
-    }
-  }
-  
 
   //pancake
 
   let date = new Date();
   //console.log(dayName.getDate());
-  if (dayName.getDate()==6){
-      document.querySelector('.Pancakes').style.display='block';
-  }
+  if(dayName === "saturday") {
+    document.getElementById("pancakes").style.display = "block";
+}
 

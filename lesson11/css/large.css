@@ -14,28 +14,28 @@
 
 /* town informatons*/
 
-#towns{
+#townsData{
 	flex-direction: row;
 
 	}
 
-#towns section{
+#townsData article{
 	flex-direction:column;
 	align-items: center;
 }
-#towns section:nth-child(odd){
+#townsData article:nth-child(odd){
 	flex-direction: column;
 }
 
-#towns section p{
-	width: 100%;
-}
 
-#towns section img{
+#townsData img{
 	width: 100%;
 	align-items: center;
 }
 
+#townData p{
+	text-align: center;
+}
 
 
 /*gallery page*/
