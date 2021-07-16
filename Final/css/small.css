@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+body {
+    font-family: 'Playfair+Display', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    background:#E0E0E0;
+    color: #222;
+  }
+
+
+/*header*/
+header {
+    font-family: "pPlayfair+Display";
+    display: flex;
+    width: 100%;
+    background-color:#B8B8F3 ;
+    background-image: url(../images/Mormant_mairie.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+#logo {
+    flex: 1;
+    
+    
+}
+#logo img {
+    min-width: 250px;
+    width: 15vw;
+}
+
+button{
+    display:flex;
+    float: right;
+    font-family: "playfair";
+    font-weight: 150;
+    font-size: 1.5em;
+    background-color: #B8B8F3;
+    
+}
+
+/* navigation*/
+
+nav {
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #2E4057;
+    
+}
+.navigation{
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+nav a {
+    color: #fff;
+    padding: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: #2E4057;
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "playfair";
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 20px;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: underline;
+    color: #B8B8F3 ;
+  }
+  
+
+.active a{
+    background-color:#B8B8F3 ;
+    color: black;
+}
+
+.responsive li{
+  display: block;
+}
+
+/* footer*/
+footer{
+  flex-shrink: 0;
+  border-top: 1px dashed #000;
+  width: 100%;
+  background: #B8B8F3;
+  color: #333;
+}
+
+.container-footer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  padding: 30px 0 50px;
+}
+
+.bloc {
+  width: 25%;
+  margin: 0 20px;
+}
+
+.footer-contact h3,
+.footer-media h3{
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.footer-contact p {
+  padding: 5px 0;
+}
+
+.liste-media {
+  list-style-type: none;
+}
+
+/* Medias */
+
+.liste-media {
+  position: relative;
+  right: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.liste-media img {
+  width: 40px;
+  margin: 10px 10px;
+}
+.liste-media a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.liste-copyright {
+  padding: 2px 0;
+}

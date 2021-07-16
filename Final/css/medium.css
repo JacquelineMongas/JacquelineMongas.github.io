@@ -1,0 +1,34 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 40em){
+    /* navigation menu*/
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+    /* footer*/
+  .container-footer {
+        width: 320px;
+    }
+    .bloc {
+        width: 300px;
+        margin: 30px 30px;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .bloc:nth-child(1) {
+        margin-top: 0;
+    }
+
+}

@@ -1,0 +1,32 @@
+/*large*/
+@media only screen and (min-width: 65rem){
+    #nav ul li{
+        display:block;
+        
+    }
+
+	#nav ul li a {
+		padding: .6rem 1rem;
+	}
+	
+   #nav a{
+		font-size: 20px;
+	}
+
+	/*footer*/
+	.container-footer {
+        width: 700px;
+        display: flex;
+    }
+    .bloc {
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+    margin-bottom: 10px;
+    }
+
+
+
+}
