@@ -1,17 +1,17 @@
 /* Media Query for medium+ views */
 @media only screen and (min-width: 40em){
     /* navigation menu*/
-    .navigation {
+    #navigation {
 		display: flex;
 	}
-	.navigation li {
+	#navigation li {
 		display: block; /* change state in small view */
 		flex: 1 1 auto;
 	}
-	.navigation a {
+	#navigation a {
 		text-align: center;
 	}
-	.navigation li:first-child {
+	#navigation li:first-child {
 		display: none;
 	}
 

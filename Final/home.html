@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-Us">
+ <html lang="en-Us">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
   </head>
 
+  <body>
   <header>
       <div id="logo">
         <img src="images/logo.png" alt="Chamber logo">
@@ -22,26 +23,122 @@
       </div>    
   </header>
 
-  <body>
+  
     <nav class="navigation">
+      <nav class="clearfix">
       <ul >
-        <li><a class="ham" href="#">🍔 Menu</a></li>
+        <li><a class="ham" href="#">&#9776; Menu</a></li>
         <li class="active"><a href="home.html">Home</a></li>
         <li><a href="city.html">Mormant</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="city.html">Contact Us</a></li>
       </ul>
-      
     </nav>
+  </nav>
 
     <main>
-      <div id="heroArea">
-        <img src="#" alt="">
-      </div>
+      <div class="container">
+        <div class="current-info">
+          
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 28 June
+                </div>
+
+                <section class="weatherSummary">
+                  <h2>Weather Summary</h2>
+                  <label>Currently:</label><p><span id="currentTemp"></span></p>
+                  <label>Temperature:</label><p><span id="temperature"></span>&deg;F</p>
+                  <label>Humidity:</label><p><span id="humidity"></span>%</p>
+                  
+                  </section>
+                </div>
+
+                <div class="place-container">
+                  <div class="time-zone" id="time-zone">Europe/Paris</div>
+                  <div id="country" class="country">FR</div>
+
+                  <div id="forecastArea">
+                    <h2> Forecast</h2>
+                    <span id="forecastFive">
+                          <div class="forecastCol">
+                              <p class="forecastDay"><span id="dayWeek1"></span></p>
+                              <img id="icon1" src="#" alt="">
+                              <p class="forecastTemp"><span id="forecast1"></span>&deg;F</p>
+                          </div>
+  
+                          <div class="forecastCol">
+                              <p class="forecastDay"><span id="dayWeek2"></span></p>
+                              <img id="icon2" src="#" alt="">
+                              <p class="forecastTemp"><span id="forecast2"></span>&deg;F</p>
+                          </div>
+  
+                          <div class="forecastCol">
+                              <p class="forecastDay"><span id="dayWeek3"></span></p>
+                              <img id="icon3" src="#" alt="">
+                              <p class="forecastTemp"><span id="forecast3"></span>&deg;F</p>
+                          </div>
+                          </span>
+              </div>
+          </div>
+        </div>
+                        </div>
+
+                        <ul class="list">
+                          <li class="list-item">
+                            <div class="list-content">
+                              <h2>who Are We?</h2>
+                              
+                              <p>Chamber of commerce is a broad term referring to a business network. 
+                                This network is made of individuals who invest their time and money into the organization,
+                                 generally with the goal of advancing their community’s economic well-being. Often,
+                                  a chamber of commerce is made up of local business owners and entrepreneurs who advocate for local business..</p>
+                              <a href="join.html">Join Us</a>
+                            </div>
+                          </li>
+                          
+                           <li class="list-item">
+                            <div class="list-content">
+                              <h2>Nature O Delices</h2>
+                              <img src="images/natureodelice1.png" alt="" />
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
+                              <a href="https://nature-o-delices.business.site/#details">Link</a>
+                              </div>
+
+                              <li class="list-item">
+                                <div class="list-content">
+                                  <h2>Le Galerie Marchande</h2>
+                              <img src="images/galerie-marchande.jpg" alt="" />
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
+                              <a href="https://nature-o-delices.business.site/#details">Link</a>
+                              </div>
+
+                              <li class="list-item">
+                                <div class="list-content">
+                                  <h2>La Droguerie</h2>
+                              <img src="images/droguerie1.jpg" alt="" />
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
+                              <a href="https://nature-o-delices.business.site/#details">Link</a>
+                            </div>
+                          </li> 
+                        </li>
+                        </li>
+                      
+                      </ul>
+                      <article>
+                        <div class="towndata"></div>
+                          <figure class="townImg">
+                              <img src="#" alt="Fish Haven image">
+                          </figure>
+                          </article>
 
 
-    </main>
+      </main>
     <footer>
 
       <div class="container-footer">
@@ -73,5 +170,5 @@
   <script src="#"></script>
   
 
-  </body>
+</body>
 </html>

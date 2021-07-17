@@ -95,6 +95,162 @@ nav a {
   display: block;
 }
 
+/*Weather*/
+.container{
+  padding: 20px 70px;
+  color:gray;
+}
+
+
+.current-info{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.date-container{
+  font-weight: 100;
+}
+.date-container .time{
+  font-size: 70px;
+}
+
+.date-container #am-pm{
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.date-container .date{
+  font-size: 30px;
+}
+
+.place-container{
+  text-align: end;
+}
+.place-container .time-zone{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.place-container .country{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.weatherSummary{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	background-color: rgb(206, 228, 241);
+	border: .5px solid;
+	padding: 10px;
+  border: .5px solid #383737;
+	grid-auto-columns: auto auto;
+  border-radius: .5em;
+	
+}
+.weatherSummary h2{
+	grid-column: 1/3;
+	margin: 0;
+}
+.weatherSummary label{
+	text-align: right;
+	font-weight: bold;
+  color: gray;
+  background: transparent;
+}
+
+.weatherSummary p{
+	margin: 0;
+	padding: 2px;
+}
+
+/* forecast*/
+
+h2{
+	font-weight: bold;
+	text-align: center;
+    text-shadow: 2px 2px 2px #555;
+    color: gray;
+	
+}
+
+.forecastArea{
+	display:flex;
+  flex-direction: column;
+	width: 100%;
+	border: 2px solid black;
+	
+}
+#forecastFive{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+  border: .5px solid #383737;
+  border-radius: .5em;
+  margin: 20px;
+	padding: 20px;
+  background-color: transparent;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
+  text-align: center;
+    
+}
+
+
+.forecastcol{
+	display: flex;
+	flex-direction: column;
+	border: solid .5px black;
+	padding: 0;
+	text-align: center;
+}
+
+.forecastDay {
+	margin: 0;
+	background: transparent;
+	text-align: center;
+	width: 100%;
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	font-weight: bold;
+    color: black;
+}
+.forecastCol img {
+	padding-top: 10px;
+	max-width: 90%;
+	height:	auto; 
+    align-items: center;
+}
+.forecastTemp {
+	color: gray;
+	font-weight: bold;
+    text-align: center;
+}
+    
+/* advert*/
+.list-item ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list-item img {
+  width: 100%;
+}
+.list-item h2 {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.list-item {
+	display: flex; 
+  padding: 0.5em;
+	width: 100%;
+}
+
+
 /* footer*/
 footer{
   flex-shrink: 0;

@@ -1,17 +1,37 @@
 /*large*/
 @media only screen and (min-width: 65rem){
-    #nav ul li{
-        display:block;
-        
+
+    #navigation{
+		display: flex;
+	}
+     #navigation li:first-child{
+        display:none;
     }
 
-	#nav ul li a {
+	nav ul li a {
 		padding: .6rem 1rem;
 	}
 	
-   #nav a{
+    #navigation a{
 		font-size: 20px;
 	}
+    /* advert*/
+    .list-item {
+        width: 33.33%;
+      }
+    
+    .list-content {
+        background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+        width: 100%;
+    }
+    .list-content p {
+        flex: 1 0 auto;
+    }
+    
+
 
 	/*footer*/
 	.container-footer {

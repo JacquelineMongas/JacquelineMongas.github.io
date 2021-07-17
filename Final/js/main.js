@@ -9,58 +9,105 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
   //weather
 
-  const cityid="2991754";
-  const APPID="7f9a47f43cca1129189dcbdaefe179ac";
+ //const cityid="2991754";
+ const lat="48.609";
+ const lon="2.8903";
+  const APPID="f6820fb06665f9baab5deff8889a45f0";
 
-  const apiURL= `https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}`;
-
-  fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-   console.log(jsObject);
-    const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    let newList = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
-    
-    for (let day = 0; day <= 4; day ++) {
-        let d = new Date(newList[day].dt_txt);
-        document.getElementById(`dayWeek${day+1}`).textContent = dayOfWeek[d.getDay()];
-        document.getElementById(`forecast${day+1}`).textContent = newList[day].main.temp.toFixed(0);
-
-        const imgalt = newList[day].weather[0].description;
-        const imagesrc = 'https://openweathermap.org/img/wn/' + newList[day].weather[0].icon + '@2x.png';
-        document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
-        document.getElementById(`icon${day+1}`).setAttribute('alt', imgalt);
-    }
+  const apiURL=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=&units=metrix={part}&appid=${APPID}`;
+  
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 
-  });
+  const timeEl = document.getElementById('time');
+const dateEl = document.getElementById('date');
+const currentWeatherItemsEl = document.getElementById('current-weather-items');
+const timezone = document.getElementById('time-zone');
+const countryEl = document.getElementById('country');
+const weatherForecastEl = document.getElementById('weather-forecast');
+const currentTempEl = document.getElementById('current-temp');
 
+setInterval(() => {
+  const time = new Date();
+  const month = time.getMonth();
+  const date = time.getDate();
+  const day = time.getDay();
+  const hour = time.getHours();
+  const hoursIn12HrFormat = hour >= 13 ? hour %12: hour
+  const minutes = time.getMinutes();
+  const ampm = hour >=12 ? 'PM' : 'AM'
 
-  //windchills//
-  fetch(apiURL)
+  timeEl.innerHTML = (hoursIn12HrFormat < 10? '0'+hoursIn12HrFormat : hoursIn12HrFormat) + ':' + (minutes < 10? '0'+minutes: minutes)+ ' ' + `<span id="am-pm">${ampm}</span>`
 
-  .then((response) => response.json())
-  .then((jsObject) => {
-    //console.log(jsObject);
-    document.getElementById('temperature').textContent = jsObject.list[0].main.temp;
-    document.getElementById('currentTemp').textContent = jsObject.list[0].weather[0].description;
-    document.getElementById('humidity').textContent = jsObject.list[0].main.humidity;
-    document.getElementById('windSpeed').textContent = jsObject.list[0].wind.speed;
-      //Windchill Calc
-      //INPUT 
-      let temperature = parseFloat(jsObject.list[0].main.temp);
-      let windSpeed = parseFloat(jsObject.windSpeed);
-      //PROCESSING
-      let windchill = "N/A";
-      if (temperature <= 50 && windSpeed > 3) {
-          windchill = windChill(temperature, windSpeed) + "&deg;F" ;
+  dateEl.innerHTML = days[day] + ', ' + date+ ' ' + months[month]
+
+}, 1000);
+
+getWeatherData()
+function getWeatherData () {
+  navigator.geolocation.getCurrentPosition((success) => {
+      
+      let {latitude, longitude } = success.coords;
+
+      fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${APPID}`)
+      .then(res => res.json()).then(data => {
+
+      console.log(data)
+      showWeatherData(data);
+      })
+
+  })
+}
+
+function showWeatherData (data){
+  let {humidity, currentTempEl, sunset, wind_speed} = data.current;
+
+  timezone.innerHTML = data.timezone;
+  countryEl.innerHTML = data.lat + 'N ' + data.lon+'E'
+  currentWeatherItemsEl.innerHTML = `
+  <div class="forecastCol">
+  <p class="forecastDay"><span id="dayWeek1"></span></p>
+  <img id="icon1" src="#" alt="">
+  <p class="forecastTemp"><span id="forecast1"></span>${currentTempEl}&deg;F</p>
+</div>
+<div class="forecastCol">
+<p class="forecastDay"><span id="dayWeek1"></span></p>
+<img id="icon1" src="#" alt="">
+<p class="forecastTemp"><span id="forecast1"></span>${humidity}&deg;F</p>
+</div>
+<div class="forecastCol">
+<p class="forecastDay"><span id="dayWeek1"></span></p>
+<img id="icon1" src="#" alt="">
+<p class="forecastTemp"><span id="forecast1"></span>${weatherForecastEl}</p>
+</div>
+  `;
+
+  let otherDayForcast = ''
+  data.daily.forEach((day, idx) => {
+      if(idx == 0){
+          currentTempEl.innerHTML = `
+          <img src="http://openweathermap.org/img/wn//${day.weather[0].icon}@4x.png" alt="weather icon" class="w-icon">
+          <div class="other">
+              <div class="day">${window.moment(day.dt*1000).format('dddd')}</div>
+              <div class="temp">Night - ${day.temp.night}&#176;C</div>
+              <div class="temp">Day - ${day.temp.day}&#176;C</div>
+          </div>
+          
+          `
+      }else{
+          otherDayForcast += `
+          <div class="weather-forecast-item">
+              <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
+              <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class="w-icon">
+              <div class="temp">Night - ${day.temp.night}&#176;C</div>
+              <div class="temp">Day - ${day.temp.day}&#176;C</div>
+          </div>
+          
+          `
       }
-      //OUTPUT
-      document.getElementById("windChill").innerHTML = windchill;
-      //windchill calculation function
-      function windChill(tempF, speed) {
-          windchill = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, .16)) + (0.4275 * tempF * Math.pow(speed, .16));
-          return windchill.toFixed(0);
-      }
+  })
 
-});
+
+  weatherForecastEl.innerHTML = otherDayForcast;
+}
