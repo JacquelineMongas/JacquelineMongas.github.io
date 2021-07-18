@@ -21,14 +21,16 @@
       }
     
     .list-content {
-        background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      padding: 1em;
-        width: 100%;
+    background-color:#2E4057;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+    
     }
     .list-content p {
         flex: 1 0 auto;
+        color: #fff;
     }
     
 
@@ -47,6 +49,10 @@
     margin-bottom: 10px;
     }
 
-
+/*contact page*/
+.imagegallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
 }

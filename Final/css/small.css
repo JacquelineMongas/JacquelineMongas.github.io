@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap,,400,300,600');
 
 
 body {
@@ -94,7 +94,7 @@ nav a {
 .responsive li{
   display: block;
 }
-
+/*home page*/
 /*Weather*/
 .container{
   padding: 20px 70px;
@@ -225,7 +225,7 @@ h2{
     text-align: center;
 }
     
-/* advert*/
+/* home page advert*/
 .list-item ul, li {
   margin: 0;
   padding: 0;
@@ -242,6 +242,7 @@ h2{
 .list {
   display: flex;
   flex-wrap: nowrap;
+  
 }
 
 .list-item {
@@ -312,3 +313,187 @@ footer{
 .liste-copyright {
   padding: 2px 0;
 }
+
+/*contact Page*/
+
+.container-contact{
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+
+#contact input[type="text"],
+ #contact input[type="email"], 
+ #contact input[type="tel"], 
+#contact textarea,
+ #contact button[type="submit"]
+  { font:400 15px/20px "playfair", sans-serif;
+    display: block;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-sizing:border-box;
+    width: 100%;
+             }
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    padding:25px;
+    margin:50px 0;
+  }
+
+  #contact h3 {
+    color: #2E4057;
+    display: block;
+    font-size: 35px;
+    font-weight: 400;
+  }
+  
+  #contact h4 {
+    margin:5px 0 15px;
+    display:block;
+    font-size:20px;
+  }
+  
+
+  form fieldset{
+    margin-bottom: 20px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+
+}
+  
+.imagegallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+  justify-content: center;
+  justify-items: center;
+}
+.galleryimage {
+  font-size: 25px;
+  max-width: fit-content;
+  height: auto;
+}
+
+.galleryimage p{
+  padding: 10px;
+  font-family: "playfair";
+  font-size: 20px;
+}
+main h3{
+  color: #333;
+  text-align: center;
+  font-family: "playfair";
+}
+
+.map-wrap {
+    width: 100%;
+    display: flex;
+    pointer-events: none;
+    position: relative; /* IE needs a   position other than static */
+    margin: 10px auto;
+  }
+  
+  .content-wrap{
+    padding-bottom: 50px;
+    }
+
+    /*Join Page*/
+    form {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+      font-family:"playfair";
+    }
+
+  form legend{
+    margin: 10px;
+    padding: 15px; 
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "playfair";
+        
+}
+        
+form label{
+    display: block;
+        
+}
+    
+form label.top, form label.bottom {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "playfair";
+  color: #333;
+}
+
+form label.top input, form label.top select, textarea, form label.bottom input, form label.bottom select {
+  display: block;
+  padding: 10px;
+  width: 80%;
+  max-width: 90%;
+  background-color: #c6c6f0;
+  
+} 
+
+form button {
+  border: solid 1px #333;
+  background-color:#B8B8F3;
+  color: #333;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 4px;
+  max-width: 10rem;
+  height: 50px;
+  width: 200px;
+  font-size: 30px;
+  text-align: center;
+  }
+
+  form label.top input:required, form label.bottom input:required {
+    border-left: #2E4057 solid 6px;
+    }
+    
+    .confirmed{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      width: 50%;
+      align-content: center;
+    }
+
+     h4{
+      font-size: 40px;
+      text-align: center;
+      font-family: "playfair";
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  
+  

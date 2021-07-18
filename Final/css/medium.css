@@ -30,5 +30,10 @@
     .bloc:nth-child(1) {
         margin-top: 0;
     }
+    /*contact page*/
+    .imagegallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
 
 }

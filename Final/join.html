@@ -25,18 +25,85 @@
   </header>
 
   
-  <nav class="flex-nav">
-    <a href="#" class="toggleNav"><i class="fa fa-bars"></i> Menu</a>
-      <ul >
+ 
+  <nav class="navigation">
+    <nav class="clearfix">
+    <ul >
+      <li><a class="ham" href="#">&#9776; Menu</a></li>
         <li><a href="home.html">Home</a></li>
         <li><a href="city.html">Mormant</a></li>
         <li class="active"><a href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="city.html">Contact Us</a></li>
       </ul>
-      
     </nav>
+    </nav>
+
     <main>
+      <form method="get" action="confirmed.html">
+        <fieldset>
+          <legend>Join Now</legend>
+          <label class="top" for="title"
+            >Title: <input type="text" name="title" id="title"
+          /></label>
+          <label class="top" for="name"
+            >First Name(required):
+            <input type="text" name="name" id="name" required
+          /></label>
+          <label class="top" for="name"
+            >Last Name(required):
+            <input type="text" name="name" id="lastname" required
+          /></label>
+          <label class="top" for="email"
+            >Email(required):
+            <input type="email" name="email" id="email" required
+          /></label>
+          <label class="top" for="phone"
+            >Cell Phone: <input type="tel" name="phone" id="phone"
+          /></label>
+          <label class="top" for="bizname"
+            >Business Name(required):
+            <input type="text" name="bizname" id="bizname" required
+          /></label>
+          <label class="top" for="bizaddress"
+            >Business Address:
+            <input type="text" name="bizaddress" id="bizaddress"
+          /></label>
+          <label class="top" for="homepage"
+            >Business Website: <input type="url" id="homepage" name="homepage"
+          /></label>
+          <label class="top" for="bizdescription">Business Description:</label>
+          <textarea
+            id="bizdescription"
+            name="bizdescription"
+            rows="5"
+            cols="30"
+          ></textarea>
+          <label class="top" for="membership"
+            >Membership Level*:
+            <input type="text" name="type" id="membership" list="members"
+          /></label>
+          <datalist id="members">
+            <option value="Non-profit ($100)"></option>
+            <option value="Bronze ($200)"></option>
+            <option value="Silver ($400)"></option>
+            <option value="Gold ($1000)"></option>
+          </datalist>
+          <button type="submit" onclick="confirmed.html" value="storm report">
+            Submit
+          </button>
+          <p class="members">
+            *Non Profit includes directory listings and business trainings<br />
+            Bronze include directory listings, bianual business trainings, 1-2
+            social media posts per month<br />
+            Silver includes directory listings, business trainings, 2-4 social
+            media posts per month, and luncheon tickets<br />
+            Gold includes directory listings, business trainings, 2-4 social
+            media posts per month, luncheon tickets, and sponsorships with
+            advertising
+          </p>
+        </fieldset>
+      </form>
 
     </main>
     <footer>

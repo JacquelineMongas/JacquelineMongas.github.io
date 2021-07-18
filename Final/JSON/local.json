@@ -1,0 +1,38 @@
+{
+    "local": [
+        {
+            "name": "Nature o Delice",
+            "number":"+33 669 6677 99"
+        },
+
+        {
+            "name": "Intermarcher",
+            "number":"+33 669 6677 99"
+        },
+
+        {
+            "name": "ARTHURIMMO",
+            "number":"+33 1 64 51 37 37"
+        },
+
+        {
+            "name": "GARAGE RENAULT",
+            "number": "+33 164 069 038"
+        },
+
+        {
+            "name": "KIOSQUE A PIZZAS",
+            "number":"+33 1 64 51 37 37"
+        },
+
+        {
+            "name": "Optic 2000",
+            "number":"+33 164 069 038"
+        },
+
+        {
+            "name": "PassiFlore",
+            "number":"+33 1 64 51 37 37"
+        }
+    ]
+}

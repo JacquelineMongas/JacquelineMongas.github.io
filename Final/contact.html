@@ -16,7 +16,6 @@
     </head>
 
   <body>
-
     <header>
       <div id="logo">
         <img src="images/logo.png" alt="Chamber logo">
@@ -25,22 +24,71 @@
       </div>    
   </header>
 
-  
-  <nav class="flex-nav">
-    <a href="#" class="toggleNav"><i class="fa fa-bars"></i> Menu</a>
-      <ul >
-        <li><a href="home.html">Home</a></li>
-        <li><a href="city.html">Mormant</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li class="active"><a href="contact.html">Contact Us</a></li>
-      </ul> 
-    </nav>
+  <nav class="navigation">
+    <nav class="clearfix">
+    <ul >
+      <li><a class="ham" href="#">&#9776; Menu</a></li>
+      <li class="active"><a href="home.html">Home</a></li>
+      <li><a href="city.html">Mormant</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="city.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </nav>
 
     <main>
-      
+      <h3>Meet The Board Members</h3>
+      <div class="imagegallery">
+         
+        <div class="galleryimage">
+          <img src="images/christina.jpg" alt="councilmember"/>
+          <p>Christina Dane</p>
+        </div>
 
+        <div class="galleryimage"> 
+          <img src="images/Mickeal.jpg" alt="councilmember"/>
+          <p>Mickeal Bennet</p>
+        </div>
 
+          <div class="galleryimage">
+           <img src="images/Nelly.jpg" alt="councilmember"/>
+           <p>Nelly Frances</p>
+          </div>
+          
+          <div class="galleryimage">
+            <img  src="images/Sara.jpg"  alt="councilmember"/>
+           <p>Sara House</p>
+          </div>
+</div>
+
+      <div class="container-contact">  
+        <form id="contact" action="" method="post">
+          <h3>Quick Contact</h3>
+          <h4>Contact us today, for more information!</h4>
+          <fieldset>Name
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>E-mail
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>Phone Number
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>Masseages
+            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset> 
+        </form>
+      </div>
+
+      <div class="content-wrap">
+        <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10551.425902585144!2d2.8962838!3d48.612590499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1626513853375!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
     </main>
 
     <footer>
@@ -74,5 +122,5 @@
   <script src="#"></script>
 
 
-  </body>
-</html>
+</body>
+  </html>
