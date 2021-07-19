@@ -259,6 +259,7 @@ footer{
   width: 100%;
   background: #B8B8F3;
   color: #333;
+  
 }
 
 .container-footer {
@@ -476,6 +477,15 @@ form button {
       font-size: 40px;
       text-align: center;
       font-family: "playfair";
+    }
+
+    /*mormant page*/
+
+    .purpose, .historyp {
+      color: black;
+      border-radius: 15px;
+      padding: 25px;
+      font-size: 25px;
     }
 
 
