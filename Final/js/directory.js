@@ -1,23 +1,37 @@
-const requestURL = "https://jacquelinemongas.github.io/final/js/local.json";
+const url = "final/jason/directory.json";
 
-fetch(requestURL)
-  .then(function (response) {
+fetch(url)
+.then(function(response) {
     return response.json();
-  })
-  
+    })
+.then(function(jObject) {
 
- .then(function (jsonObject) {
-    console.table(jsonObject);
-   // const local = jsonObject['local'];
- // for (let i = 0; i < local.length; i++ ) {
-     // let card = document.createElement('section');
-     // let h2 = document.createElement('h2');
-      //let number = document.createElement('p')
-     // h2.textContent = "Company: " + local[i].name;
-      //number.textContent= "Phone Number: " + local[i].number;
-     // card.appendChild(h2);
-     // card.appendChild(number)
-     // document.querySelector('div.cards').appendChild(card);
-    //}
-  
-  });
+        const businesses = jObject['businesses']; 
+        
+         for(let i = 0; i < businesses.length; i++)   {
+            
+            const section = document.createElement('section');
+            const h3 = document.createElement('h3');
+            const p1 = document.createElement('p');
+            const p2 = document.createElement('p');
+            
+            const img = document.createElement('img');
+
+            h3.textContent = businesses[i].name;
+            p1.textContent = businesses[i].contact;
+            p2.textContent = businesses[i].website;
+            p2.setAttribute('class', 'drctLinks');
+            section.setAttribute('class', 'drctCards');
+            img.setAttribute('src', businesses[i].src);
+            img.setAttribute('alt', businesses[i].alt);
+
+            section.appendChild(pic);
+            
+            section.appendChild(h3);
+            section.appendChild(p1);
+            section.appendChild(p2);
+            
+            document.getElementById('bCards').appendChild(section);
+        }})
+
+      

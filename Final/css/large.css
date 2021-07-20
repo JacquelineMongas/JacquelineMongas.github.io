@@ -1,20 +1,26 @@
 /*large*/
 @media only screen and (min-width: 65rem){
-
-    #navigation{
+    
+   .navigation{
 		display: flex;
 	}
-     #navigation li:first-child{
+     .navigation li:first-child{
         display:none;
     }
 
 	nav ul li a {
 		padding: .6rem 1rem;
+        
 	}
 	
-    #navigation a{
+    .navigation a{
 		font-size: 20px;
+        
 	}
+
+   
+
+
     /* advert*/
     .list-item {
         width: 33.33%;
@@ -37,17 +43,20 @@
 
 	/*footer*/
 	.container-footer {
-        width: 700px;
+        width: 320px;
         display: flex;
     }
     .bloc {
-        width: 40%;
-        margin: 0 0;
+        width: 300px;
+        margin: 30px 30px;
     }
     .bloc:nth-child(1),
     .bloc:nth-child(2) {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     }
+
+    .bloc:nth-child(1) {
+        margin-top: 0;}
 
 /*contact page*/
 .imagegallery{

@@ -32,62 +32,45 @@
         <li><a href="mormant.html">Mormant</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
-        <li><a href="city.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </nav>
 
     <main>
-      <div class="container">
-        <div class="current-info">
+
+                <section class="weather">
+                  <h3>Current Weather</h3>
+                  <div class="col1">
+                    <div>Currently: <span id="currently"></span>°</div>
+                    <div>Humidity: <span id="humidity">%</span></div>
+                    <div>Current Conditions: <span id="conditions"> </span></div>
+                  </div>
+                </section>
           
-
-            <div class="date-container">
-                <div class="time" id="time">
-                    12:30 <span id="am-pm">PM</span>
+                
+                <h3 class="forecast">3 Day Forecast</h3>
+                <div class="forecastdiv">
+                <div class="flex">
+                  <div class="flex-col">
+                    <h3 class="col-head"><span id="forecast1"></span></h3>
+                    <img id="forecast1image" src="#" alt="weathericon" />
+                    <p class="data"><span id="forecastTemp1">°</span></p>
+                  </div>
+                  <div class="flex-col">
+                    <h3 class="col-head"><span id="forecast2"></span></h3>
+                    <img id="forecast2image" src="#" alt="weathericon" />
+                    <p class="data"><span id="forecastTemp2">°</span></p>
+                  </div>
+                  <div class="flex-col">
+                    <h3 class="col-head"><span id="forecast3"></span></h3>
+                    <span id="imagesrc"></span> &nbsp;
+                    <img id="forecast3image" src="#" alt="weathericon" />
+                    <p class="data"><span id="forecastTemp3">°</span></p>
+                  </div>
+                </div>    
                 </div>
-                <div class="date" id="date">
-                    Monday, 28 June
-                </div>
-
-                <section class="weatherSummary">
-                  <h2>Weather Summary</h2>
-                  <label>Currently:</label><p><span id="currentTemp"></span></p>
-                  <label>Temperature:</label><p><span id="temperature"></span>&deg;F</p>
-                  <label>Humidity:</label><p><span id="humidity"></span>%</p>
-                  
-                  </section>
-                </div>
-
-                <div class="place-container">
-                  <div class="time-zone" id="time-zone">Europe/Paris</div>
-                  <div id="country" class="country">FR</div>
-
-                  <div id="forecastArea">
-                    <h2> Forecast</h2>
-                    <span id="forecastFive">
-                          <div class="forecastCol">
-                              <p class="forecastDay"><span id="dayWeek1"></span></p>
-                              <img id="icon1" src="#" alt="">
-                              <p class="forecastTemp"><span id="forecast1"></span>&deg;F</p>
-                          </div>
-  
-                          <div class="forecastCol">
-                              <p class="forecastDay"><span id="dayWeek2"></span></p>
-                              <img id="icon2" src="#" alt="">
-                              <p class="forecastTemp"><span id="forecast2"></span>&deg;F</p>
-                          </div>
-  
-                          <div class="forecastCol">
-                              <p class="forecastDay"><span id="dayWeek3"></span></p>
-                              <img id="icon3" src="#" alt="">
-                              <p class="forecastTemp"><span id="forecast3"></span>&deg;F</p>
-                          </div>
-                          </span>
-              </div>
-          </div>
-        </div>
-                        </div>
+                
 
                         <ul class="list">
                           <li class="list-item">
@@ -128,16 +111,7 @@
                               <a href="#">Link</a>
                             </div>
                           </li>
-                      </ul>
-
-                      <article>
-                        <div class="towndata"></div>
-                          <figure class="townImg">
-                              <img src="#" alt="Fish Haven image">
-                          </figure>
-                      </article>
-
-
+                        </ul>
       </main>
     <footer>
 
