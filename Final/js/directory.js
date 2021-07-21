@@ -1,37 +1,39 @@
-const url = "final/jason/directory.json";
+const requestURL = "json/directory.json";
 
-fetch(url)
-.then(function(response) {
+fetch(requestURL)
+  .then(function (response) {
     return response.json();
-    })
-.then(function(jObject) {
+  })
 
-        const businesses = jObject['businesses']; 
+  
+  .then(function (jObject) {
+    console.table(jObject); 
+
+     
+    const business = jObject['business']; 
         
-         for(let i = 0; i < businesses.length; i++)   {
-            
-            const section = document.createElement('section');
-            const h3 = document.createElement('h3');
-            const p1 = document.createElement('p');
-            const p2 = document.createElement('p');
-            
-            const img = document.createElement('img');
+    for(let i = 0; i < business.length; i++)   {
+       
+       const div = document.createElement('div');
+       const h2 = document.createElement('h2');
+       const p1 = document.createElement('p');
+       const p2 = document.createElement('p');
+       const pic = document.createElement('picture');
+       const img = document.createElement('img');
 
-            h3.textContent = businesses[i].name;
-            p1.textContent = businesses[i].contact;
-            p2.textContent = businesses[i].website;
-            p2.setAttribute('class', 'drctLinks');
-            section.setAttribute('class', 'drctCards');
-            img.setAttribute('src', businesses[i].src);
-            img.setAttribute('alt', businesses[i].alt);
+       h2.textContent = business[i].name;
+       p1.textContent = business[i].contact;
+       p2.textContent = business[i].website;
+       p2.setAttribute('class', 'drctLinks');
+       div.setAttribute('class', 'cards');
+       img.setAttribute('src', business[i].src);
+       img.setAttribute('alt', business[i].alt);
 
-            section.appendChild(pic);
-            
-            section.appendChild(h3);
-            section.appendChild(p1);
-            section.appendChild(p2);
-            
-            document.getElementById('bCards').appendChild(section);
-        }})
-
-      
+       div.appendChild(pic);
+       pic.appendChild(img);
+       div.appendChild(h2);
+       div.appendChild(p1);
+       div.appendChild(p2);
+       
+       document.getElementById('cards').appendChild(div);
+   }})

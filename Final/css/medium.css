@@ -37,7 +37,7 @@
 
   .container-footer {
     width: 700px;
-    flex-wrap: wrap;
+   /* flex-wrap: wrap;*/
     }
     .bloc {
         width: 40%;
@@ -53,5 +53,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
       }
+
+      /*mormant page*/
+
+      .demographics{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      } 
 
 }

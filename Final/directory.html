@@ -20,7 +20,7 @@
       <div id="logo">
         <img src="images/logo.png" alt="Chamber logo">
 
-        <button class="login">Member login</button>
+        
       </div>    
   </header>
 
@@ -38,45 +38,48 @@
       </nav>
     </nav>
     <main>
-      <div>
-        <section id="drctIcons">
-            <h2>Local Business Directory</h2>
-            <div>
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-            </div>
-        </section>
-    <div id="bCards">
-        
-    </div>
-    </div>
+      <div class="dirctorycontainer">
+        <div id="btnContainer">
+       <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+       <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+     </div>
+     <br>
+           <div class="row">
+           <div class= "cards"></div>
+         </div>
+       </div>
     </main>
     <footer>
+      <div class="contact">
+        <div class="address">
+          <h4>Contact Information</h4>
+          ✉  Mormant Chamber of Commerce<br />
+              11 Rue de l'Invention<br />
+              Mormant, 77720 FR<br />
 
-      <div class="container-footer">
-       
-        <div class="bloc footer-copyright">
-          ©<span id="Year"></span> 2021 | Jacqueline Mongas | France |
+          ☎ +33 999 999-9999
         </div>
-       
+        <div class="social">
+          <div class="facebook">
+            <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.png"  alt="facebook" /></a>
+          </div>
 
-        <div class="bloc footer-contact">
-          <h3>Contact Info</h3>
-          <p>55-55-55-55-55</p>
-          <p>supportclient@contact.com</p>
-          <p>6 rue de l'invention, Mormant, 77702</p>
+          <div class="instagram">
+             <a href="https://www.instagram.com/" target="_blank">
+              <img  src="images/instagram.png" alt="Instagram"/></a>
+          </div>
+          
+          <div class="twitter">
+            <a href="https://www.twitter.com/" target="_blank">
+             <img  src="images/twitter.png" alt="Instagram"/></a>
+         </div>
+        </div>
       </div>
-
-      <div class="bloc footer-medias">
-        <h3>Social Media</h3>
-        <ul class="liste-media">
-         <li><a href="https://www.facebook.com" target="_blank"><img class="socialIcon" src="images/facebook.png" alt="facebook icon">&ensp;</a></li>
-         <li><a href="https://www.instagram.com" target="_blank"><img class="socialIcon" src="images/instagram.png" alt="instagram icon">&ensp;</a></li> 
-         <li><a href="https://twitter.com" target="_blank"><img  class="socialIcon" src="images/twitter.png" alt="twitter icon"></a></li> 
-        </ul>
-      </div>
-
-      </div>
+      <p class="footerp">
+        &#169; 2021 | Jacqueline Mongas | Current Date:
+        <span id="currentDate"></span>
+      </p>
   </footer>
   <script src="js/main.js"></script>
   <script src="js/directory.js"></script>

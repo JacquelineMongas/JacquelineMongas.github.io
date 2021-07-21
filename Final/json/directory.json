@@ -4,7 +4,7 @@
         "name": "Nature o Delice",
         "contact":"+33 669 6677 99",
         "website":"https://nature-o-delices.business.site/",
-        "src": "imges/natureodelice.jpg",
+        "imageurl": "imges/natureodelice.jpg",
         "alt": "Nature o Delice"
     },
 
@@ -12,7 +12,7 @@
         "name": "Intermarcher",
         "number":"+33 669 6677 99",
         "website":"https://www.intermarche.com//",
-        "src": "imges/intermarher.png",
+        "imageurl": "imges/intermarher.png",
         "alt": "intermarche"
     },
 
@@ -20,7 +20,7 @@
         "name": "ARTHURIMMO",
         "number":"+33 1 64 51 37 37",
         "website":"https://www.arthurimmo.com/immobilier/tout/immo-mormant-77/",
-        "src": "imges/arthurimmo.png",
+        "imageurl": "imges/arthurimmo.png",
         "alt": "Arthur immo"
     },
 
@@ -28,7 +28,7 @@
         "name": "GARAGE RENAULT",
         "number": "+33 164 069 038",
         "website":"https://concessionnaire.renault.fr/mormant-garage-oudin.html",
-        "src": "imges/garage_renault.jpg",
+        "imageurl": "imges/garage_renault.jpg",
         "alt": "Garage Renault"
     },
 
@@ -36,7 +36,7 @@
         "name": "KIOSQUE A PIZZAS",
         "number":"+33 1 64 51 37 37",
         "website":"https://www.le-kiosque-a-pizzas.com/commander-pizza-mormant--264",
-        "src": "imges/pizza.jpg",
+        "imageurl": "imges/pizza.jpg",
         "alt": "Kiosque a pizza"
     },
 
@@ -44,7 +44,7 @@
         "name": "Optic 2000",
         "number":"+33 164 069 038",
         "website":"https://nature-o-delices.business.site/",
-        "src": "imges/optic_2000_1.jpg",
+        "imageurl": "imges/optic_2000_1.jpg",
         "alt": "Optic 2000"
     },
 
@@ -52,7 +52,7 @@
         "name": "PassiFlore",
         "number":"+33 1 64 51 37 37",
         "website":"https://www.florajet.com/fleuriste/seine-et-marne-77/mormant-77720/passiflore-77733.html",
-        "src": "imges/floriste.jpg",
+        "imageurl": "imges/floriste.jpg",
         "alt": "Passiflore"
     }
 ]

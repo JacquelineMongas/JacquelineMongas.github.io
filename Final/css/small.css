@@ -1,13 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap,,400,300,600');
 
-
+html, body{
+  height: 100%;
+}
 body {
     font-family: 'Playfair+Display', sans-serif;
     font-size: 1rem;
     margin: 0;
     background:#E0E0E0;
     color: #222;
+    min-height: 100%;
   }
 
 
@@ -24,7 +27,7 @@ header {
 }
 #logo {
     flex: 1;
-    
+    max-width: 80%;
     
 }
 #logo img {
@@ -32,15 +35,7 @@ header {
     width: 15vw;
 }
 
-button{
-    display:flex;
-    float: right;
-    font-family: "playfair";
-    font-weight: 150;
-    font-size: 1.5em;
-    background-color: #B8B8F3;
-    
-}
+
 
 /* navigation*/
 
@@ -97,20 +92,70 @@ nav a {
   display: block;
 }
 
+#hero-section{
+  background-image: url(images/herotown1.jpg);
+}
+
 /*home page*/
 /*Weather*/
 .weather{
-  position: absolute;
 	margin: 20px;
 	background-color: transparent;
-	border: .5px solid;
 	padding: 10px;
   border: .5px solid #383737;
-	grid-auto-columns: auto auto;
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
   border-radius: .5em;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, .3);
+  font-size: 20px;
+  font-weight:bold ;
 	
 }
+
+ h3{
+  font-size: 30px;
+}
+
+.action {
+  position: relative;
+} 
+
+.join {
+  display: block; 
+  height: 100px; 
+  width: 300px; 
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background: #B8B8F3; 
+  color: #000; 
+  text-align: center; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold; 
+  font-family:'Slabo 27px', serif;
+}
+
+.join:hover {
+  text-decoration: none;
+  background-color: #2E4057;
+ color:#fff ;
+}
+
+a:link{
+  text-decoration: none;
+  background-color: #2E4057;
+}
+a:visited {
+  text-decoration: none;
+}
+
 
 /* forecast*/
 
@@ -130,6 +175,7 @@ h2{
   max-width: 100%;
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
  
   
 }
@@ -185,6 +231,8 @@ h3.col-head {
   padding: 0 5px 5px;
   font-size: 0.8rem;
   text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* home page advert*/
@@ -203,7 +251,7 @@ h3.col-head {
 
 .list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   
 }
 
@@ -227,74 +275,55 @@ h3.col-head {
 }
 
 /* footer*/
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+footer{
+  background-color:#2E4057;
+  color: #B8B8F3;
+  display: grid;
 }
 
-footer{
-  flex-shrink: 0;
-  border-top: 1px dashed #000;
-  width: 100%;
-  background: #B8B8F3;
-  color: #333;
+
+.address{
+  margin-left: 40px;
+  padding: 30px 0 10px 0;
+  font-size: 20px;
+  font-family: 'playfair', sans-serif;
   
 }
 
-.container-footer {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+
+.footerp{
+  
+  margin: 50px 0 50px 0;
+  font-family: 'playfair', sans-serif;
+  color:#B8B8F3;
+  font-weight: bold;
   font-size: 15px;
-  padding: 30px 0 50px;
+  text-align: center;
+  padding-bottom: 1rem;
+  line-height: 15px;
+  padding-left: 1.5rem;
 }
 
-.bloc {
-  width: 25%;
-  margin: 0 20px;
-}
-
-.footer-contact h3,
-.footer-media h3{
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-
-.footer-contact p {
-  padding: 5px 0;
-}
-
-.liste-media {
-  list-style-type: none;
-}
 
 /* Medias */
 
-.liste-media {
-  position: relative;
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
   right: 10px;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.liste-media img {
+.social img {
   width: 40px;
   margin: 10px 10px;
-}
-.liste-media a {
   text-decoration: none;
   color: #333;
   display: flex;
   align-items: center;
   font-size: 15px;
-}
-
-.liste-copyright {
-  padding: 2px 0;
 }
 
 /*contact Page*/
@@ -470,7 +499,77 @@ form button {
       font-size: 25px;
     }
 
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      margin-top: 10px;
+      
+    }
 
+    .mormant{
+      grid-column: 1/2;
+      width: 100%;
+      height: auto;
+  
+  }
+
+  .library{
+    grid-column: 2/3;
+    width: 100%;
+    height: auto;
+  
+}
+
+.monument{
+  grid-column: 3/3;
+  width: 100%;
+  height: auto;
+  
+}
+
+.demographics{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 30px;
+  justify-content: center;
+}  
+
+.demo, .graphics{
+  text-align: left; font-size: 25px;
+  text-align: center;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.demop{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 9px;
+  color: #333;
+}
+
+.history{
+  margin: 30px 0;
+  padding: 20px;
+  color: #333;
+  font-size: 15px;
+}
+
+.history h1{
+  text-align: center;
+  padding: 0 0 0 10px;
+  color: #333;
+}
+
+.oldMormant {
+  float: right;
+  width: 300px;
+  padding: 25px 25px 15px 15px;
+}
 
 
 

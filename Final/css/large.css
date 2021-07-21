@@ -23,7 +23,9 @@
 
     /* advert*/
     .list-item {
-        width: 33.33%;
+        width: 20%;
+        display: flex;
+        justify-content:inherit;
       }
     
     .list-content {
@@ -32,10 +34,11 @@
     flex-direction: column;
     padding: 1em;
     width: 100%;
+  
     
     }
     .list-content p {
-        flex: 1 0 auto;
+        flex:  0 auto;
         color: #fff;
     }
     

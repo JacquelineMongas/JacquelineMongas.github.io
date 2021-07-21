@@ -19,7 +19,7 @@
       <div id="logo">
         <img src="images/logo.png" alt="Chamber logo">
 
-        <button class="login">Member login</button>
+        
       </div>    
   </header>
 
@@ -38,13 +38,23 @@
   </nav>
 
     <main>
+      <div class="hero-section">
+      <div class="action">
+        
+        <input
+          class="join"
+          type="button"
+          onclick="location.href='join.html'"
+          value="Join Now"
+        />
+      </div>
 
                 <section class="weather">
                   <h3>Current Weather</h3>
                   <div class="col1">
                     <div>Currently: <span id="currently"></span>°</div>
-                    <div>Humidity: <span id="humidity">%</span></div>
-                    <div>Current Conditions: <span id="conditions"> </span></div>
+                    <div>Humidity: <span id="humidity"></span>%</div>
+                    <div>Current Conditions: <span id="conditions"></span></div>
                   </div>
                 </section>
           
@@ -55,23 +65,22 @@
                   <div class="flex-col">
                     <h3 class="col-head"><span id="forecast1"></span></h3>
                     <img id="forecast1image" src="#" alt="weathericon" />
-                    <p class="data"><span id="forecastTemp1">°</span></p>
+                    <p class="data"><span id="forecastTemp1"></span>&deg;F</p>
                   </div>
                   <div class="flex-col">
                     <h3 class="col-head"><span id="forecast2"></span></h3>
                     <img id="forecast2image" src="#" alt="weathericon" />
-                    <p class="data"><span id="forecastTemp2">°</span></p>
+                    <p class="data"><span id="forecastTemp2"></span>&deg;F</p>
                   </div>
                   <div class="flex-col">
                     <h3 class="col-head"><span id="forecast3"></span></h3>
                     <span id="imagesrc"></span> &nbsp;
                     <img id="forecast3image" src="#" alt="weathericon" />
-                    <p class="data"><span id="forecastTemp3">°</span></p>
+                    <p class="data"><span id="forecastTemp3"></span>&deg;F</p>
                   </div>
                 </div>    
                 </div>
-                
-
+              </div>
                         <ul class="list">
                           <li class="list-item">
                             <div class="list-content">
@@ -99,7 +108,7 @@
                                   <h2>Le Galerie Marchande</h2>
                               <img src="images/galerie-marchande.jpg" alt="" />
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
-                              <a href="#">Link</a>
+                              <a href="#"></a>
                               </div>
                               </li>
 
@@ -108,40 +117,47 @@
                                   <h2>La Droguerie</h2>
                               <img src="images/droguerie1.jpg" alt="" />
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, vel, quia. Non nostrum, consectetur ipsum doloribus enim maiores a laudantium, odio vel blanditiis id ea dolorum expedita fugit incidunt commodi.</p>
-                              <a href="#">Link</a>
+                              <a href="#"></a>
                             </div>
                           </li>
                         </ul>
       </main>
     <footer>
+      <footer>
+        <div class="contact">
+          <div class="address">
+            <h4>Contact Information</h4>
+            ✉  Mormant Chamber of Commerce<br />
+                11 Rue de l'Invention<br />
+                Mormant, 77720 FR<br />
 
-      <div class="container-footer">
-       
-        <div class="bloc footer-copyright">
-          ©<span id="Year"></span> 2021 | Jacqueline Mongas | France |
+            ☎ +33 999 999-9999
+          </div>
+          <div class="social">
+            <div class="facebook">
+              <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/facebook.png"  alt="facebook" /></a>
+            </div>
+
+            <div class="instagram">
+               <a href="https://www.instagram.com/" target="_blank">
+                <img  src="images/instagram.png" alt="Instagram"/></a>
+            </div>
+            
+            <div class="twitter">
+              <a href="https://www.twitter.com/" target="_blank">
+               <img  src="images/twitter.png" alt="Instagram"/></a>
+           </div>
+          </div>
         </div>
-       
-
-        <div class="bloc footer-contact">
-          <h3>Contact Info</h3>
-          <p>55-55-55-55-55</p>
-          <p>supportclient@contact.com</p>
-          <p>6 rue de l'invention, Mormant, 77702</p>
-      </div>
-
-      <div class="bloc footer-medias">
-        <h3>Social Media</h3>
-        <ul class="liste-media">
-         <li><a href="https://www.facebook.com" target="_blank"><img class="socialIcon" src="images/facebook.png" alt="facebook icon">&ensp;</a></li>
-         <li><a href="https://www.instagram.com" target="_blank"><img class="socialIcon" src="images/instagram.png" alt="instagram icon">&ensp;</a></li> 
-         <li><a href="https://twitter.com" target="_blank"><img  class="socialIcon" src="images/twitter.png" alt="twitter icon"></a></li> 
-        </ul>
-      </div>
-
-      </div>
+        <p class="footerp">
+          &#169; 2021 | Jacqueline Mongas | Current Date:
+          <span id="currentDate"></span>
+        </p>
+      </footer>
   </footer>
   <script src="js/main.js"></script>
-  <script src="#"></script>
+  <script src="js/currentdate.js"></script>
   
 
 </body>
