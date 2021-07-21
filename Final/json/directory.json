@@ -4,55 +4,55 @@
         "name": "Nature o Delice",
         "contact":"+33 669 6677 99",
         "website":"https://nature-o-delices.business.site/",
-        "imageurl": "imges/natureodelice.jpg",
-        "alt": "Nature o Delice"
+        "src": "images/natureodelice.png",
+        "alt": "Cuisine from around the world"
     },
 
     {
         "name": "Intermarcher",
-        "number":"+33 669 6677 99",
+        "contact":"+33 669 6677 99",
         "website":"https://www.intermarche.com//",
-        "imageurl": "imges/intermarher.png",
-        "alt": "intermarche"
+        "src": "images/intermarcher.png",
+        "alt": "The three Musqueteer"
     },
 
     {
         "name": "ARTHURIMMO",
-        "number":"+33 1 64 51 37 37",
+        "contact":"+33 1 64 51 37 37",
         "website":"https://www.arthurimmo.com/immobilier/tout/immo-mormant-77/",
-        "imageurl": "imges/arthurimmo.png",
-        "alt": "Arthur immo"
+        "src": "images/arthurimmo.png",
+        "alt": "Buy a house"
     },
 
     {
         "name": "GARAGE RENAULT",
-        "number": "+33 164 069 038",
+        "contact": "+33 164 069 038",
         "website":"https://concessionnaire.renault.fr/mormant-garage-oudin.html",
-        "imageurl": "imges/garage_renault.jpg",
-        "alt": "Garage Renault"
+        "src": "images/garage_renault.jpg",
+        "alt": "Garage Renault at your service"
     },
 
     {
         "name": "KIOSQUE A PIZZAS",
-        "number":"+33 1 64 51 37 37",
+        "contact":"+33 1 64 51 37 37",
         "website":"https://www.le-kiosque-a-pizzas.com/commander-pizza-mormant--264",
-        "imageurl": "imges/pizza.jpg",
-        "alt": "Kiosque a pizza"
+        "src": "images/pizza.jpg",
+        "alt": "Delicious Pizzas's at your door!"
     },
 
     {
         "name": "Optic 2000",
-        "number":"+33 164 069 038",
-        "website":"https://nature-o-delices.business.site/",
-        "imageurl": "imges/optic_2000_1.jpg",
+        "contact":"+33 164 069 038",
+        "website":"https://opticiens.optic2000.com/opticien-mormant-77720-938",
+        "src": "images/optic_2000_1.jpg",
         "alt": "Optic 2000"
     },
 
     {
         "name": "PassiFlore",
-        "number":"+33 1 64 51 37 37",
+        "contact":"+33 1 64 51 37 37",
         "website":"https://www.florajet.com/fleuriste/seine-et-marne-77/mormant-77720/passiflore-77733.html",
-        "imageurl": "imges/floriste.jpg",
+        "src": "images/floriste1.jpg",
         "alt": "Passiflore"
     }
 ]
