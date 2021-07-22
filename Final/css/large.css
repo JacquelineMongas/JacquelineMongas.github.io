@@ -18,6 +18,15 @@
         
 	}
 
+    #logo {
+        flex: 1;
+        max-width: 100%;
+        
+    }
+    #logo img {
+        min-width: 250px;
+        width: 15vw;
+    }
    
 
 
