@@ -575,8 +575,7 @@ form button {
  div.x {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: left;
-  justify-content: left;
+  
   grid-gap: 15px;
   margin: 0 auto;
   padding: 20px 0px;

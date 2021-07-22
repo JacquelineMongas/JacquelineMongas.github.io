@@ -41,25 +41,20 @@
         flex:  0 auto;
         color: #fff;
     }
+
+    div.x {
+        grid-template-columns: repeat(3, minmax(100px, 230px));
+    }
+
+    div.x.list {
+        grid-template-columns: 230px;
+    }
+    
     
 
 
 	/*footer*/
-	.container-footer {
-        width: 320px;
-        display: flex;
-    }
-    .bloc {
-        width: 300px;
-        margin: 30px 30px;
-    }
-    .bloc:nth-child(1),
-    .bloc:nth-child(2) {
-    margin-bottom: 30px;
-    }
-
-    .bloc:nth-child(1) {
-        margin-top: 0;}
+	
 
 /*contact page*/
 .imagegallery{
